@@ -1,49 +1,56 @@
 import React from 'react';
 import logo from '../assets/logo.png'; // replace with your actual logo path
+import "./Navbar.css"
 
 const Navbar = () => {
   return (
-    <nav
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        padding: '1rem 3rem',
-        backgroundColor: 'white',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        zIndex: 1000,
-        boxShadow: '0 2px 6px rgba(0,0,0,0.05)',
-      }}
-    >
-      {/* Logo on the left */}
-      <div style={{ flex: 1 }}>
-        <img src={logo} alt="BDL Logo" style={{ height: '60px' }} />
-      </div>
+    <nav className="navbar navbar-expand-lg glassy-navbar fancy-navbar fixed-top shadow-sm">
+      <div className="container-fluid px-4">
+        {/* Logo */}
+        <a className="navbar-brand d-flex align-items-center" href="#home">
+          <img src={logo} alt="BDL Logo" height="50" className="me-2 rounded-circle" />
+        </a>
 
-      {/* Center Navigation Links */}
-      <div style={{ flex: 2, display: 'flex', justifyContent: 'center', gap: '2rem' }}>
-        <a href="#home" style={linkStyle}>Home</a>
-        <a href="#services" style={linkStyle}>Services</a>
-        <a href="#careers" style={linkStyle}>Careers</a>
-        <a href="#about" style={linkStyle}>About</a>
-        <a href="#contact" style={linkStyle}>Contact Us</a>
-      </div>
+        {/* Toggle for mobile */}
+        <button
+          className="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-      {/* Right space filler (can be used later for buttons or profile) */}
-      <div style={{ flex: 1 }}></div>
+        {/* Nav links */}
+        <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul className="navbar-nav gap-4">
+            <li className="nav-item">
+              <a className="nav-link custom-link" href="#home">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link custom-link" href="#services">Services</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link custom-link" href="#careers">Careers</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link custom-link" href="#about">About</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link custom-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Right spacer */}
+        <div className="d-none d-lg-block" style={{ width: "60px" }}></div>
+      </div>
     </nav>
   );
 };
 
-const linkStyle = {
-  color: '#111827',
-  textDecoration: 'none',
-  fontSize: '1rem',
-  fontWeight: '500',
-  transition: 'color 0.2s',
-};
-
 export default Navbar;
+

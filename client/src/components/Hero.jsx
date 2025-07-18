@@ -2,15 +2,9 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: '100vh',
-        overflow: 'hidden',
-      }}
-    >
-      {/* Background 3D Model */}
+    <section style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
+      
+      {/* Fullscreen Interactive 3D Model */}
       <iframe
         src="https://my.spline.design/interactiveaiwebsite-wt9VmNbGgXMKlavj84OiWCl2/"
         frameBorder="0"
@@ -20,26 +14,30 @@ const HeroSection = () => {
           position: 'absolute',
           top: 0,
           left: 0,
-          zIndex: 0,
-          pointerEvents: 'none',
+          zIndex: 2, // On top to be interactive
+          pointerEvents: 'auto',
           border: 'none',
         }}
-        allowFullScreen
+        allow="autoplay; fullscreen"
       ></iframe>
-      
-      {/* Overlay Content */}
+
+      {/* Overlay Container */}
       <div
         style={{
-          position: 'relative',
-          zIndex: 2,
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          zIndex: 3, // Above iframe
+          width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'flex-start',
           padding: '0 5%',
+          pointerEvents: 'none', // Let mouse events go to iframe
         }}
       >
-        <div style={{ maxWidth: '600px', color: '#111827' }}>
+        <div style={{ maxWidth: '600px', color: '#111827', pointerEvents: 'auto' }}>
           <h1 style={{ fontSize: '2.8rem', fontWeight: 'bold', marginBottom: '1rem' }}>
             Transforming Ideas into Tech
           </h1>
