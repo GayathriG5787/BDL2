@@ -13,20 +13,20 @@ import Serv from './components/Serv.jsx'
 import Serv1 from './components/Serv1.jsx'
 import MultiItemCarousel from './components/MultiItemCarousel.jsx'
 import FruitCarousel from './components/FruitCarousel.jsx'
-import CardSlider from './components/CardSlider.jsx'
+import Services from './components/Services.jsx'
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Hero />
-      <CardSlider />
-      <Carousel />
-      <Carousel2 />
-      <Carousel3 />
+      <Services />
       <Projects />
       <Slider />
       
+      {/* <Carousel />
+      <Carousel2 />
+      <Carousel3 /> */}
       {/* <Carousel3D /> */}
       {/* <Serv1 /> */}
       {/* <MultiItemCarousel /> */}
