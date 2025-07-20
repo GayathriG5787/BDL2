@@ -6,22 +6,31 @@ import Carousel2 from './components/Carousel2.jsx'
 import Carousel3 from './components/Carousel3.jsx'
 import Projects from './components/Projects.jsx'
 import Slider from './components/Slider.jsx'
+import Carousel3D from './components/Carousel3D.jsx'
 import Sli1 from './components/Voyage.jsx'
 import RotatingCards from './components/RotatingCards.jsx'
 import Serv from './components/Serv.jsx'
 import Serv1 from './components/Serv1.jsx'
+import MultiItemCarousel from './components/MultiItemCarousel.jsx'
+import FruitCarousel from './components/FruitCarousel.jsx'
+import CardSlider from './components/CardSlider.jsx'
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Hero />
+      <CardSlider />
       <Carousel />
       <Carousel2 />
       <Carousel3 />
       <Projects />
       <Slider />
-      <Serv1 />
+      
+      {/* <Carousel3D /> */}
+      {/* <Serv1 /> */}
+      {/* <MultiItemCarousel /> */}
+      {/* <FruitCarousel /> */}
       {/* <Serv /> */}
       {/* <RotatingCards /> */}
       {/* <Sli1 /> */}
