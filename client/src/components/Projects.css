@@ -16,7 +16,7 @@ main {
   padding-block: min(20vh, 3rem);
 }
 
-.bg {
+/* .bg {
   position: fixed;
   top: -4rem;
   left: -12rem;
@@ -31,7 +31,7 @@ main {
   z-index: -1;
   width: 9.375rem;
   opacity: 0;
-}
+} */
 
 main > div span {
   text-transform: uppercase;
@@ -106,7 +106,7 @@ main > div > a:hover {
 }
 
 .swiper-slide {
-  width: 18.75rem;
+  width: 50rem;
   height: 28.125rem;
   display: flex;
   flex-direction: column;
@@ -161,7 +161,7 @@ main > div > a:hover {
 
 .swiper-slide--one {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1628944682084-831f35256163?auto=format&fit=crop&w=687&q=80")
+    url("../assets/web.png")
       no-repeat 50% 50% / cover;
 }
 
@@ -173,7 +173,7 @@ main > div > a:hover {
 
 .swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?auto=format&fit=crop&w=1170&q=80")
+    url("../assets/social.png")
       no-repeat 50% 50% / cover;
 }
 
@@ -210,4 +210,25 @@ main > div > a:hover {
   .swiper {
     width: 85%;
   }
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+
+  main > .swiper {
+    flex: 1;
+    min-width: 50vw; /* 👈 Ensures carousel takes at least 50% of screen */
+  }
+
+  main > div {
+    flex: 1;
+    max-width: 50vw;
+  }
+}
+
+main {
+  column-gap: 3rem;
 }

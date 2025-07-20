@@ -4,9 +4,9 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Keyboard, Mousewheel } from "swiper/modules";
-import './Carousel4.css';
+import './Projects.css';
 
-const Carousel4 = () => {
+const Projects = () => {
   useEffect(() => {
     // Swiper modules are already passed in React Swiper
   }, []);
@@ -15,13 +15,12 @@ const Carousel4 = () => {
     <main>
       <div>
         <span>discover</span>
-        <h1>aquatic animals</h1>
+        <h1>Our Projects</h1>
         <hr />
         <p>
-          Beauty and mystery are hidden under the sea. Explore with our
-          application to know about Aquatic Animals.
+          At Bharat Digital Limited, we deliver comprehensive digital services including software and website development, digital marketing, and IT support. We also specialize in social media management to boost your online presence and engagement.
         </p>
-        <a href="#">download app</a>
+        <a href="#">Explore</a>
       </div>
       <Swiper
         className="swiper"
@@ -33,6 +32,7 @@ const Carousel4 = () => {
         keyboard={{ enabled: true }}
         mousewheel={{ thresholdDelta: 70 }}
         pagination={{ clickable: true }}
+        slidesPerView="auto"
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -50,13 +50,11 @@ const Carousel4 = () => {
       >
         <SwiperSlide className="swiper-slide swiper-slide--one">
           <div>
-            <h2>Jellyfish</h2>
+            <h2>Website Development</h2>
             <p>
-              Jellyfish and sea jellies are the informal common names given to the
-              medusa-phase of certain gelatinous members of the subphylum Medusozoa,
-              a major part of the phylum Cnidaria.
+              We design and develop responsive, user-friendly websites that represent your brand effectively.
             </p>
-            <a href="https://en.wikipedia.org/wiki/Jellyfish" target="_blank" rel="noreferrer">
+            <a href="" target="_blank" rel="noreferrer">
               explore
             </a>
           </div>
@@ -64,13 +62,11 @@ const Carousel4 = () => {
 
         <SwiperSlide className="swiper-slide swiper-slide--two">
           <div>
-            <h2>Seahorse</h2>
+            <h2>Digital Marketing</h2>
             <p>
-              Seahorses are mainly found in shallow tropical and temperate salt
-              water. They live in sheltered areas such as seagrass beds, estuaries,
-              coral reefs, and mangroves.
+              We help you grow your business online through targeted SEO, PPC, and content strategies.
             </p>
-            <a href="https://en.wikipedia.org/wiki/Seahorse" target="_blank" rel="noreferrer">
+            <a href="" target="_blank" rel="noreferrer">
               explore
             </a>
           </div>
@@ -78,13 +74,11 @@ const Carousel4 = () => {
 
         <SwiperSlide className="swiper-slide swiper-slide--three">
           <div>
-            <h2>Octopus</h2>
+            <h2>Social Media Management</h2>
             <p>
-              Octopuses inhabit various regions of the ocean, including coral reefs,
-              pelagic waters, and the seabed. Most species grow quickly and are
-              short-lived.
+              We manage and optimize your social media presence to increase reach and engagement.
             </p>
-            <a href="https://en.wikipedia.org/wiki/Octopus" target="_blank" rel="noreferrer">
+            <a href="" target="_blank" rel="noreferrer">
               explore
             </a>
           </div>
@@ -92,12 +86,11 @@ const Carousel4 = () => {
 
         <SwiperSlide className="swiper-slide swiper-slide--four">
           <div>
-            <h2>Shark</h2>
+            <h2>Software Development</h2>
             <p>
-              Sharks are a group of elasmobranch fish characterized by a cartilaginous
-              skeleton, gill slits, and pectoral fins that are not fused to the head.
+              We build customized software solutions tailored to your business goals and operations.
             </p>
-            <a href="https://en.wikipedia.org/wiki/Shark" target="_blank" rel="noreferrer">
+            <a href="" target="_blank" rel="noreferrer">
               explore
             </a>
           </div>
@@ -105,29 +98,28 @@ const Carousel4 = () => {
 
         <SwiperSlide className="swiper-slide swiper-slide--five">
           <div>
-            <h2>Dolphin</h2>
+            <h2>IT Support</h2>
             <p>
-              Dolphins are widespread and prefer tropical waters. They feed largely on
-              fish and squid, but some, like orcas, feed on large mammals.
+              We provide reliable IT support to ensure your systems run smoothly and securely.
             </p>
-            <a href="https://en.wikipedia.org/wiki/Dolphin" target="_blank" rel="noreferrer">
+            <a href="" target="_blank" rel="noreferrer">
               explore
             </a>
           </div>
         </SwiperSlide>
       </Swiper>
       <img
-        src="https://cdn.pixabay.com/photo/2021/11/04/19/39/jellyfish-6769173_960_720.png"
-        alt="jellyfish"
+        src=""
+        alt=""
         className="bg"
       />
       <img
-        src="https://cdn.pixabay.com/photo/2012/04/13/13/57/scallop-32506_960_720.png"
-        alt="scallop"
+        src=""
+        alt=""
         className="bg2"
       />
     </main>
   );
 };
 
-export default Carousel4;
+export default Projects;
