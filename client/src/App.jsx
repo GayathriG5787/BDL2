@@ -1,10 +1,11 @@
 import React from 'react'
+import './index.css'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import Carousel from './components/Carousel.jsx'
 import Carousel2 from './components/Carousel2.jsx'
 import Carousel3 from './components/Carousel3.jsx'
-import Projects from './components/Projects.jsx'
+import Testimonials from './components/Testimonials.jsx'
 import Slider from './components/Slider.jsx'
 import Carousel3D from './components/Carousel3D.jsx'
 import Sli1 from './components/Voyage.jsx'
@@ -14,6 +15,7 @@ import Serv1 from './components/Serv1.jsx'
 import MultiItemCarousel from './components/MultiItemCarousel.jsx'
 import FruitCarousel from './components/FruitCarousel.jsx'
 import Services from './components/Services.jsx'
+import Testi from './components/Testi.jsx'
 
 const App = () => {
   return (
@@ -21,9 +23,10 @@ const App = () => {
       <Navbar />
       <Hero />
       <Services />
-      <Projects />
+      <Testimonials />
       <Slider />
-      
+
+      {/* <Testi /> */}
       {/* <Carousel />
       <Carousel2 />
       <Carousel3 /> */}

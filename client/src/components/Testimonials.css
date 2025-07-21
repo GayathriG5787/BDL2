@@ -40,7 +40,7 @@ main > div span {
   color: #717171;
 }
 
-main > div h1 {
+/* main > div h1 {
   text-transform: capitalize;
   letter-spacing: 0.8px;
   font-family: "Roboto", sans-serif;
@@ -54,7 +54,7 @@ main > div h1 {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-}
+} */
 
 main > div hr {
   display: block;
@@ -214,21 +214,65 @@ main > div > a:hover {
 
 @media screen and (min-width: 48rem) {
   main {
-    display: flex;
-    align-items: center;
+    display: block;
   }
 
-  main > .swiper {
-    flex: 1;
-    min-width: 50vw; /* 👈 Ensures carousel takes at least 50% of screen */
+  .swiper {
+    margin-top: 2rem;
   }
 
-  main > div {
-    flex: 1;
-    max-width: 50vw;
+  main > section {
+    text-align: center;
+  }
+
+  main > section h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 1rem;
   }
 }
 
-main {
+
+/* main {
   column-gap: 3rem;
+} */
+
+.testimonial-slide {
+  background: #61a7f3;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial-slide div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+}
+
+.testimonial-slide p {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-style: italic;
+  max-width: 80%;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.testimonial-slide h3 {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+.client-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #005baa;
 }

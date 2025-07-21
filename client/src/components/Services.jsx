@@ -26,7 +26,7 @@ function CardSlider() {
 
   return (
     <div className="container mt-5 mb-5">
-      <h1 className="mb-4 fw-bold">Services</h1>
+      <h1 className="mb-6 fw-bold">Services</h1>
       <Slider {...settings}>
         {data.map((d, index) => (
           <div key={index} className="px-2">

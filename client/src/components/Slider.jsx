@@ -13,8 +13,6 @@ const images = [
 
 const Slider = () => {
   return (
-    <div>
-      <h1>Our Featured Partners</h1>
     <div className="slider">
       <div className="slide-track">
         {[...images, ...images].map((src, index) => (
@@ -23,7 +21,6 @@ const Slider = () => {
           </div>
         ))}
       </div>
-    </div>
     </div>
   );
 };
