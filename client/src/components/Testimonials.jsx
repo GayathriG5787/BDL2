@@ -15,7 +15,7 @@ const Testimonials = () => {
   return (
     <main>
   <section>
-    <h1 mb-4 fw-bold>What our customers say</h1>
+    <h1 className="fs-1 fw-bold">What our customers say</h1>
     <Swiper
       className="swiper"
       effect={"coverflow"}
@@ -25,7 +25,7 @@ const Testimonials = () => {
       slideToClickedSlide={true}
       speed={1000}
       autoplay={{
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: true,
   }}
       keyboard={{ enabled: true }}

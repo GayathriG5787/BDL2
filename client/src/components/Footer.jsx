@@ -1,44 +1,71 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaTwitter,
+  FaFacebookF,
+  FaInstagram,
+  FaGoogle
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light border-top border-secondary">
+    <footer
+  className="text-dark border-top border-secondary"
+  style={{ background: 'linear-gradient(to right, #eaf6ff, #d9edff)' }}
+>
       <div className="container py-5">
-        <div className="row">
+        <div className="row text-start align-items-start">
           {/* Company Info */}
           <div className="col-md-4 mb-4">
-            <h5 className="fw-bold text-white">Bharat Digital Ltd.</h5>
-            <p className="text-light small">
+            <h6 className="fw-semibold mb-3">Bharat Digital Ltd.</h6>
+            <p className="small mb-0" style={{width: '300px'}}>
               Providing end-to-end digital solutions for modern businesses to grow and thrive.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="col-md-4 mb-4">
-            <h6 className="fw-semibold text-white mb-3">Quick Links</h6>
-            <ul className="list-unstyled">
-              <li><a href="/" className="text-decoration-none text-light">Home</a></li>
-              <li><a href="/services" className="text-decoration-none text-light">Services</a></li>
-              <li><a href="/careers" className="text-decoration-none text-light">Careers</a></li>
-              <li><a href="/about" className="text-decoration-none text-light">About</a></li>
-              <li><a href="/contact" className="text-decoration-none text-light">Contact Us</a></li>
+            <h6 className="fw-semibold mb-3">Quick Links</h6>
+            <ul className="list-unstyled small mb-0">
+              <li className="mb-2"><a href="/" className="text-decoration-none">Home</a></li>
+              <li className="mb-2"><a href="/services" className="text-decoration-none">Services</a></li>
+              <li className="mb-2"><a href="/careers" className="text-decoration-none">Careers</a></li>
+              <li className="mb-2"><a href="/about" className="text-decoration-none">About</a></li>
+              <li><a href="/contact" className="text-decoration-none">Contact Us</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div className="col-md-4 mb-4">
-            <h6 className="fw-semibold text-white mb-3">Get in Touch</h6>
-            <ul className="list-unstyled text-light small">
-              <li>Email: info@bharatdigital.com</li>
-              <li>Phone: +91 98765 43210</li>
-              <li>Address: Bengaluru, India</li>
+            <h6 className="fw-semibold mb-3">Contact Us</h6>
+            <ul className="list-unstyled small mb-3">
+              <li className="d-flex align-items-center mb-2">
+                <FaPhoneAlt className="me-2 text-primary" />
+                <span>+1258 3258 5679</span>
+              </li>
+              <li className="d-flex align-items-center mb-2">
+                <FaEnvelope className="me-2 text-primary" />
+                <span>hello@workik.com</span>
+              </li>
+              <li className="d-flex align-items-center">
+                <FaMapMarkerAlt className="me-2 text-primary" />
+                <span>102 street, y cross 485656</span>
+              </li>
             </ul>
+
+            <div className="d-flex gap-3">
+              <a href="#" className="text-primary"><FaGoogle /></a>
+              <a href="#" className="text-primary"><FaTwitter /></a>
+              <a href="#" className="text-primary"><FaInstagram /></a>
+              <a href="#" className="text-primary"><FaFacebookF /></a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="text-center text-light small py-3 border-top border-secondary">
+      <div className="text-center small py-3 border-top border-secondary">
         &copy; {new Date().getFullYear()} Bharat Digital Ltd. All rights reserved.
       </div>
     </footer>

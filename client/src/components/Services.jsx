@@ -12,7 +12,7 @@ import softImg from '../assets/soft.png';
 
 function CardSlider() {
   const settings = {
-    infinite: true,
+    infinite: true, 
     arrows: false,
     speed: 500,
     autoplay: true,
@@ -26,7 +26,7 @@ function CardSlider() {
 
   return (
     <div className="container mt-5 mb-5">
-      <h1 className="mb-6 fw-bold">Services</h1>
+      <h1 style={{ marginTop: "3.5rem", marginBottom: "3.5rem" }} className="fw-bold">Services</h1>
       <Slider {...settings}>
         {data.map((d, index) => (
           <div key={index} className="px-2">

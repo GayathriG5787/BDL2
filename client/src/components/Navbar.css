@@ -2,7 +2,7 @@
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-radius: 20px;
+  border-radius: 50px;
   margin: 0.5rem 1rem;
   transition: all 0.3s ease;
   border: 1px solid rgb(0 104 242);
@@ -10,9 +10,7 @@
 }
 
 .fancy-navbar {
-  padding: 0rem 1.2rem;
-  padding-top: "0rem !important";
-  padding-bottom: "0rem !important";
+  padding: 0px !important;
 }
 
 .custom-link {
