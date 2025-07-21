@@ -16,6 +16,7 @@ import MultiItemCarousel from './components/MultiItemCarousel.jsx'
 import FruitCarousel from './components/FruitCarousel.jsx'
 import Services from './components/Services.jsx'
 import Testi from './components/Testi.jsx'
+import Footer from './components/Footer.jsx'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Services />
       <Testimonials />
       <Slider />
+      <Footer />
 
       {/* <Testi /> */}
       {/* <Carousel />
