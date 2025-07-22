@@ -1,4 +1,5 @@
 import React from "react";
+import Spline from '@splinetool/react-spline';
 
 const ContactUs = () => {
   return (
@@ -6,9 +7,11 @@ const ContactUs = () => {
         paddingTop: "5rem",
         paddingBottom: "5rem"
     }}>
+      <Spline scene="https://prod.spline.design/xnDn5mOey7iOxzPV/scene.splinecode" />
+      
       <div className="container">
         <div className="row align-items-start g-5">
-          {/* Left - Contact Form */}
+          {/* Left - Contact Form */}   
           <div className="col-lg-6">
             <h2 className="fw-bold mb-4">Let's talk</h2>
             <p className="text-muted mb-5">

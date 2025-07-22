@@ -17,6 +17,7 @@ import FruitCarousel from './components/FruitCarousel.jsx'
 import Services from './components/Services.jsx'
 import Testi from './components/Testi.jsx'
 import ContactUs from './components/ContactUs.jsx'
+import ContactUs1 from './components/ContactUs1.jsx'
 import Footer from './components/Footer.jsx'
 
 const App = () => {
@@ -27,9 +28,11 @@ const App = () => {
       <Slider />
       <Services />
       <Testimonials />
-
       <ContactUs />
+      {/* <ContactUs1 /> */}
+
       <Footer />
+
 
       {/* <Testi /> */}
       {/* <Carousel />
