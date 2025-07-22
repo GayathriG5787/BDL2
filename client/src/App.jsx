@@ -19,6 +19,7 @@ import Testi from './components/Testi.jsx'
 import ContactUs from './components/ContactUs.jsx'
 import ContactUs1 from './components/ContactUs1.jsx'
 import Footer from './components/Footer.jsx'
+import Services1 from './components/Services1.jsx'
 
 const App = () => {
   return (
@@ -26,11 +27,9 @@ const App = () => {
       <Navbar />
       <Hero />
       <Slider />
-      <Services />
+      <Services1 />
       <Testimonials />
       <ContactUs1 />
-      {/* <ContactUs1 /> */}
-
       <Footer />
 
 
