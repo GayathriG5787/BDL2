@@ -1,77 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import Spline from "@splinetool/react-spline";
 
 const ContactUs = () => {
-  const [isViewerReady, setIsViewerReady] = useState(false);
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.type = "module";
-    script.src =
-      "https://unpkg.com/@splinetool/viewer@1.10.33/build/spline-viewer.js";
-
-    script.onload = () => {
-      setIsViewerReady(true); // show viewer only after it's ready
-    };
-
-    document.body.appendChild(script);
-  }, []);
-
   return (
     <div
       className="contact-section"
       style={{
         paddingTop: "5rem",
         paddingBottom: "5rem",
+        background: "linear-gradient(to bottom, #93CCFA, #E3F1FF)", // Matching the 3D section bg
       }}
     >
-      {/* Only show spline-viewer after it's loaded */}
-      {isViewerReady && (
-        <spline-viewer
-          url="https://prod.spline.design/xnDn5mOey7iOxzPV/scene.splinecode"
-          disable-zoom
-          style={{ width: "100%", height: "400px", display: "block", marginBottom: "2rem" }}
-        ></spline-viewer>
-      )}
-
       <div className="container">
-        <div className="row align-items-start g-5">
+        <div className="row align-items-center g-5">
           {/* Left - Contact Form */}
           <div className="col-lg-6">
             <h2 className="fw-bold mb-4">Let's talk</h2>
             <p className="text-muted mb-5">
-              We’d love to hear from you! Send us your message and we'll get
-              back to you shortly.
+              We’d love to hear from you! Send us your message and we'll get back to you shortly.
             </p>
 
             <form>
               <div className="row g-4">
                 <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="First Name"
-                  />
+                  <input type="text" className="form-control" placeholder="First Name" />
                 </div>
                 <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control "
-                    placeholder="Last Name"
-                  />
+                  <input type="text" className="form-control" placeholder="Last Name" />
                 </div>
                 <div className="col-md-6">
-                  <input
-                    type="email"
-                    className="form-control "
-                    placeholder="Email"
-                  />
+                  <input type="email" className="form-control" placeholder="Email" />
                 </div>
                 <div className="col-md-6">
-                  <input
-                    type="tel"
-                    className="form-control "
-                    placeholder="Phone Number"
-                  />
+                  <input type="tel" className="form-control" placeholder="Phone Number" />
                 </div>
                 <div className="col-12">
                   <textarea
@@ -84,14 +45,20 @@ const ContactUs = () => {
               <button
                 type="submit"
                 className="btn btn-primary rounded-pill px-4 mt-4"
-                style={{
-                  backgroundColor: "#007bff",
-                }}
+                style={{ backgroundColor: "#007bff" }}
               >
                 Send Message
               </button>
             </form>
           </div>
+
+          {/* Right - 3D Object */}
+          <div className="col-lg-6 p-0" style={{ background: "linear-gradient(to right, #c0e5ff, #eaf6ff)" }}>
+          <div className="spline-wrapper" style={{ width: "100%", height: "500px" }}>
+            <Spline scene="https://prod.spline.design/xnDn5mOey7iOxzPV/scene.splinecode" />
+          </div>
+        </div>
+
         </div>
       </div>
     </div>
