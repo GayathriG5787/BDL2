@@ -12,7 +12,7 @@ const Navbar = () => {
           <img src={logo} alt="BDL Logo" height="50" className="me-2" />
         </Link>
 
-        {/* Toggle for mobile */}
+        {/* Mobile Toggler */}
         <button
           className="navbar-toggler custom-toggler"
           type="button"
@@ -25,28 +25,42 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Nav links */}
+        {/* Nav Links */}
         <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul className="navbar-nav gap-4">
             <li className="nav-item">
               <Link className="nav-link custom-link" to="/">Home</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link custom-link" to="/services">Services</Link>
+
+            {/* Services with dropdown */}
+            <li className="nav-item dropdown hover-dropdown">
+              <span className="nav-link dropdown-toggle custom-link" id="servicesDropdown" role="button">
+                Services
+              </span>
+              <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><Link className="dropdown-item" to="/website-development">Website Development</Link></li>
+                <li><Link className="dropdown-item" to="/digital-marketing">Digital Marketing</Link></li>
+                <li><Link className="dropdown-item" to="/software-development">Software Development</Link></li>
+                <li><Link className="dropdown-item" to="/it-support">IT Support</Link></li>
+                <li><Link className="dropdown-item" to="/social-media">Social Media Management</Link></li>
+              </ul>
             </li>
+
             <li className="nav-item">
               <Link className="nav-link custom-link" to="/careers">Careers</Link>
             </li>
+
             <li className="nav-item">
               <Link className="nav-link custom-link" to="/about">About</Link>
             </li>
+
             <li className="nav-item">
               <Link className="nav-link custom-link" to="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>
 
-        {/* Right spacer */}
+        {/* Spacer on right */}
         <div className="d-none d-lg-block" style={{ width: "60px" }}></div>
       </div>
     </nav>

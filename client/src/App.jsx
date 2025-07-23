@@ -8,6 +8,12 @@ import Services from './pages/Services';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
 
+import WebsiteDevelopment from './pages/WebsiteDevelopment';
+import DigitalMarketing from './pages/DigitalMarketing';
+import SoftwareDevelopment from './pages/SoftwareDevelopment';
+import ITSupport from './pages/ITSupport';
+import SocialMedia from './pages/SocialMedia';
+
 const App = () => {
   return (
     <Router>
@@ -15,6 +21,11 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/website-development" element={<WebsiteDevelopment />} />
+        <Route path="/digital-marketing" element={<DigitalMarketing />} />
+        <Route path="/software-development" element={<SoftwareDevelopment />} />
+        <Route path="/it-support" element={<ITSupport />} />
+        <Route path="/social-media" element={<SocialMedia />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
