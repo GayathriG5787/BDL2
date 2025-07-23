@@ -1,43 +1,46 @@
 import React from "react";
-import Spline from "@splinetool/react-spline";
-import './ContactUs.css'
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaGoogle,
+  FaTwitter,
+  FaInstagram,
+  FaFacebookF,
+} from "react-icons/fa";
+
+import contactImage from "../assets/contact-image1.png";
+import "./ContactUs.css";
 
 const ContactUs = () => {
   return (
-    <div
-      className="contact-section"
-      style={{
-        paddingTop: "5rem",
-        paddingBottom: "5rem",
-        background: "linear-gradient(to bottom, #93CCFA, #E3F1FF)", // Matching the 3D section bg
-      }}
-    >
-      <div className="container">
-        <div className="row align-items-center g-5">
-          {/* Left - Contact Form */}
-          <div className="col-lg-6">
-            <h2 className="fw-bold mb-4">Let's talk</h2>
-            <p className="text-muted mb-5">
-              We’d love to hear from you! Send us your message and we'll get back to you shortly.
-            </p>
+    <section className="contact-section">
+      <div className="container py-5">
+        <div className="row g-5 align-items-center">
 
+          {/* Contact Form on Left */}
+          <div className="col-lg-6">
+            <h2 className="fw-bold mb-3">Let's talk</h2>
+            <p className="text-muted mb-4 fs-6">
+              We'd love to hear from you. Fill out the form and we'll be in touch shortly.
+            </p>
             <form>
-              <div className="row g-4">
+              <div className="row g-3">
                 <div className="col-md-6">
-                  <input type="text" className="form-control" placeholder="First Name" />
+                  <input type="text" className="form-control shadow-sm" placeholder="First Name" />
                 </div>
                 <div className="col-md-6">
-                  <input type="text" className="form-control" placeholder="Last Name" />
+                  <input type="text" className="form-control shadow-sm" placeholder="Last Name" />
                 </div>
                 <div className="col-md-6">
-                  <input type="email" className="form-control" placeholder="Email" />
+                  <input type="email" className="form-control shadow-sm" placeholder="Email" />
                 </div>
                 <div className="col-md-6">
-                  <input type="tel" className="form-control" placeholder="Phone Number" />
+                  <input type="tel" className="form-control shadow-sm" placeholder="Phone Number" />
                 </div>
                 <div className="col-12">
                   <textarea
-                    className="form-control rounded-3"
+                    className="form-control shadow-sm"
                     rows="4"
                     placeholder="What do you have in mind?"
                   ></textarea>
@@ -45,24 +48,25 @@ const ContactUs = () => {
               </div>
               <button
                 type="submit"
-                className="btn btn-primary rounded-pill px-4 mt-4"
-                style={{ backgroundColor: "#007bff" }}
+                className="btn btn-primary rounded-pill px-4 py-2 mt-4"
               >
                 Send Message
               </button>
             </form>
           </div>
 
-          {/* Right - 3D Object */}
-          {/* <div className="col-lg-6 p-0" style={{ background: "linear-gradient(to right, #c0e5ff, #eaf6ff)" }}>
-          <div className="spline-wrapper" style={{ width: "100%", height: "500px" }}>
-            <Spline scene="https://prod.spline.design/xnDn5mOey7iOxzPV/scene.splinecode" />
+          {/* Image on Right */}
+          <div className="col-lg-6 text-center">
+            <img
+              src={contactImage}
+              alt="Contact"
+              className="img-fluid contact-image"
+            />
           </div>
-        </div> */}
 
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
