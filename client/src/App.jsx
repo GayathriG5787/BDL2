@@ -1,51 +1,26 @@
-import React from 'react'
-import './index.css'
-import Navbar from './components/Navbar.jsx'
-import Hero from './components/Hero.jsx'
-import Carousel from './components/Carousel.jsx'
-import Carousel2 from './components/Carousel2.jsx'
-import Carousel3 from './components/Carousel3.jsx'
-import Testimonials from './components/Testimonials.jsx'
-import Slider from './components/Slider.jsx'
-import Carousel3D from './components/Carousel3D.jsx'
-import Sli1 from './components/Voyage.jsx'
-import RotatingCards from './components/RotatingCards.jsx'
-import Serv from './components/Serv.jsx'
-import Serv1 from './components/Serv1.jsx'
-import MultiItemCarousel from './components/MultiItemCarousel.jsx'
-import FruitCarousel from './components/FruitCarousel.jsx'
-import Services from './components/Services.jsx'
-import Testi from './components/Testi.jsx'
-import ContactUs from './components/ContactUs.jsx'
-import ContactUs1 from './components/ContactUs1.jsx'
-import Footer from './components/Footer.jsx'
-import Services1 from './components/Services1.jsx'
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import Careers from './pages/Careers';
+import Contact from './pages/Contact';
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Hero />
-      <Slider />
-      <Services1 />
-      <Testimonials />
-      <ContactUs1 />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  );
+};
 
-
-      {/* <Testi /> */}
-      {/* <Carousel />
-      <Carousel2 />
-      <Carousel3 /> */}
-      {/* <Carousel3D /> */}
-      {/* <Serv1 /> */}
-      {/* <MultiItemCarousel /> */}
-      {/* <FruitCarousel /> */}
-      {/* <Serv /> */}
-      {/* <RotatingCards /> */}
-      {/* <Sli1 /> */}
-    </div>
-  )
-}
-
-export default App
+export default App;

@@ -53,11 +53,11 @@ const ContactUs = () => {
           </div>
 
           {/* Right - 3D Object */}
-          <div className="col-lg-6 p-0" style={{ background: "linear-gradient(to right, #c0e5ff, #eaf6ff)" }}>
+          {/* <div className="col-lg-6 p-0" style={{ background: "linear-gradient(to right, #c0e5ff, #eaf6ff)" }}>
           <div className="spline-wrapper" style={{ width: "100%", height: "500px" }}>
             <Spline scene="https://prod.spline.design/xnDn5mOey7iOxzPV/scene.splinecode" />
           </div>
-        </div>
+        </div> */}
 
         </div>
       </div>

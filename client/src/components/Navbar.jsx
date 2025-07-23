@@ -1,15 +1,16 @@
 import React from 'react';
-import logo from '../assets/logo.png'; // replace with your actual logo path
-import "./Navbar.css"
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg glassy-navbar fancy-navbar fixed-top shadow-sm">
       <div className="container-fluid px-4">
         {/* Logo */}
-        <a className="navbar-brand d-flex align-items-center" href="#home">
+        <Link className="navbar-brand d-flex align-items-center" to="/">
           <img src={logo} alt="BDL Logo" height="50" className="me-2 rounded-circle" />
-        </a>
+        </Link>
 
         {/* Toggle for mobile */}
         <button
@@ -28,19 +29,19 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul className="navbar-nav gap-4">
             <li className="nav-item">
-              <a className="nav-link custom-link" href="#home">Home</a>
+              <Link className="nav-link custom-link" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link custom-link" href="#services">Services</a>
+              <Link className="nav-link custom-link" to="/services">Services</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link custom-link" href="#careers">Careers</a>
+              <Link className="nav-link custom-link" to="/careers">Careers</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link custom-link" href="#about">About</a>
+              <Link className="nav-link custom-link" to="/about">About</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link custom-link" href="#contact">Contact Us</a>
+              <Link className="nav-link custom-link" to="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -53,4 +54,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

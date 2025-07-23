@@ -1,0 +1,19 @@
+/* About.css */
+
+.container {
+
+  border-radius: 20px;
+}
+
+h2 {
+  color: #1a2e50;
+}
+
+.text-muted {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+ 
+.body {
+  background: linear-gradient(to right, #e8f1fa, #f0f7ff);
+}
