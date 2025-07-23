@@ -16,7 +16,7 @@ function ServicesH() {
     infinite: true, 
     arrows: false,
     speed: 500,
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
