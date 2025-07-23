@@ -119,3 +119,14 @@
     height: 100px;
   }
 }
+
+/* Set fixed height for the title so descriptions align */
+.card-title {
+  font-size: 1.2rem;
+  text-align: center;
+  min-height: 3rem; /* Adjust if needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
