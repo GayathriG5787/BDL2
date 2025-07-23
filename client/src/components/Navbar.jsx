@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="container-fluid px-4">
         {/* Logo */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
-          <img src={logo} alt="BDL Logo" height="50" className="me-2 rounded-circle" />
+          <img src={logo} alt="BDL Logo" height="50" className="me-2" />
         </Link>
 
         {/* Toggle for mobile */}

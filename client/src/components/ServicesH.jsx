@@ -34,7 +34,7 @@ function ServicesH() {
       /> */}
 
       {/* Content */}
-      <div className="container mt-5 mb-5 content-overlay">
+      <div className="container mb-5 content-overlay">
         <h1 className="fw-bold services-title">Services</h1>
         <Slider {...settings}>
           {data.map((d, index) => (

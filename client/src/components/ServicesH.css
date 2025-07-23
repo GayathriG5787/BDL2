@@ -3,9 +3,8 @@
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-color: #f8f9fa;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
+  background: linear-gradient(to right, #e9f3ff, #f4faff);
+  padding-top: 3rem;
 }
 
 .spline-background {
