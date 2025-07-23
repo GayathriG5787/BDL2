@@ -3,7 +3,7 @@ import React from 'react'
 import Hero from '../components/Hero.jsx'
 import Testimonials from '../components/Testimonials.jsx'
 import Slider from '../components/Slider.jsx'
-import ContactUs1 from '../components/ContactUs1.jsx'
+import ContactUs from '../components/ContactUs.jsx'
 import Footer from '../components/Footer.jsx'
 import Services from '../components/ServicesH.jsx'
 
@@ -14,7 +14,7 @@ const App = () => {
       <Slider />
       <Services />
       <Testimonials />
-      <ContactUs1 />
+      <ContactUs />
       <Footer />
     </div>
   )
