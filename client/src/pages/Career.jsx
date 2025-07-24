@@ -10,44 +10,44 @@ const Career = () => {
       {
         title: "Frontend Developer",
         desc: `
-<p>We are seeking a creative, detail-oriented, and technically skilled <strong>Frontend Developer</strong> to join our growing team. The ideal candidate will be responsible for transforming UI/UX designs into interactive, performant, and user-friendly web interfaces. You will collaborate with cross-functional teams to ensure an exceptional user experience across devices.</p>
+          <p>We are seeking a creative, detail-oriented, and technically skilled <strong>Frontend Developer</strong> to join our growing team. The ideal candidate will be responsible for transforming UI/UX designs into interactive, performant, and user-friendly web interfaces. You will collaborate with cross-functional teams to ensure an exceptional user experience across devices.</p>
 
-<h6><strong>Key Responsibilities:</strong></h6>
-<ul>
-  <li>Build responsive and engaging web interfaces using React.js, HTML5, CSS3, and JavaScript (ES6+).</li>
-  <li>Convert designs and wireframes from tools like Figma into functional frontend code.</li>
-  <li>Optimize web performance, accessibility, and cross-browser compatibility.</li>
-  <li>Collaborate with UI/UX designers, backend developers, and product managers.</li>
-  <li>Maintain clean, scalable, and well-documented codebase.</li>
-  <li>Work with REST APIs and integrate frontend with backend services.</li>
-  <li>Participate in Agile sprints and code reviews.</li>
-</ul>
+          <h6><strong>Key Responsibilities:</strong></h6>
+          <ul>
+            <li>Build responsive and engaging web interfaces using React.js, HTML5, CSS3, and JavaScript (ES6+).</li>
+            <li>Convert designs and wireframes from tools like Figma into functional frontend code.</li>
+            <li>Optimize web performance, accessibility, and cross-browser compatibility.</li>
+            <li>Collaborate with UI/UX designers, backend developers, and product managers.</li>
+            <li>Maintain clean, scalable, and well-documented codebase.</li>
+            <li>Work with REST APIs and integrate frontend with backend services.</li>
+            <li>Participate in Agile sprints and code reviews.</li>
+          </ul>
 
-<h6><strong>Preferred Skills:</strong></h6>
-<ul>
-  <li>Proficiency in React.js and familiarity with frameworks like Next.js or Vue.js is a plus.</li>
-  <li>Experience with state management (Redux, Context API).</li>
-  <li>Understanding of responsive design principles.</li>
-  <li>Familiarity with Git, JIRA, and CI/CD tools.</li>
-  <li>Experience with frontend testing libraries like Jest or Cypress.</li>
-</ul>
+          <h6><strong>Preferred Skills:</strong></h6>
+          <ul>
+            <li>Proficiency in React.js and familiarity with frameworks like Next.js or Vue.js is a plus.</li>
+            <li>Experience with state management (Redux, Context API).</li>
+            <li>Understanding of responsive design principles.</li>
+            <li>Familiarity with Git, JIRA, and CI/CD tools.</li>
+            <li>Experience with frontend testing libraries like Jest or Cypress.</li>
+          </ul>
 
-<h6><strong>Requirements:</strong></h6>
-<ul>
-  <li>Bachelor’s degree in Computer Science or related field.</li>
-  <li>1–3 years of frontend development experience.</li>
-  <li>Strong problem-solving and debugging skills.</li>
-  <li>Effective communication and collaboration skills.</li>
-</ul>
+          <h6><strong>Requirements:</strong></h6>
+          <ul>
+            <li>Bachelor’s degree in Computer Science or related field.</li>
+            <li>1–3 years of frontend development experience.</li>
+            <li>Strong problem-solving and debugging skills.</li>
+            <li>Effective communication and collaboration skills.</li>
+          </ul>
 
-<h6><strong>Perks:</strong></h6>
-<ul>
-  <li>Competitive salary: £35,000 – £54,000 (based on experience).</li>
-  <li>Flexible work hours and remote options.</li>
-  <li>Training & certification support.</li>
-  <li>Inclusive, friendly, and innovative team environment.</li>
-</ul>
-`
+          <h6><strong>Perks:</strong></h6>
+          <ul>
+            <li>Competitive salary: £35,000 – £54,000 (based on experience).</li>
+            <li>Flexible work hours and remote options.</li>
+            <li>Training & certification support.</li>
+            <li>Inclusive, friendly, and innovative team environment.</li>
+          </ul>
+          `
       },
       {
         title: "Backend Developer",
