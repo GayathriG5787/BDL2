@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Tabs, Tab, Accordion } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './Career.css';
 
 const Career = () => {
@@ -34,14 +32,15 @@ const Career = () => {
     <div className="career-page">
 
       {/* Hero Section */}
-      <div id="heroCarousel" className="carousel slide mb-5" data-bs-ride="carousel">
+      {/* <div id="heroCarousel" className="carousel slide mb-5" data-bs-ride="carousel"> */}
+      <div id="heroCarousel" className="carousel slide mb-5">
         <div className="carousel-inner glassy-container rounded-4">
           <div className="carousel-item active text-center p-5 bg-primary text-white">
-            <h1 className="display-5 fw-bold">Join Our Team</h1>
+            <h1 className="display-5 pt-5 fw-bold">Join Our Team</h1>
             <p className="lead">Explore opportunities to work, grow, and lead with us!</p>
           </div>
           <div className="carousel-item text-center p-5 bg-info text-white">
-            <h1 className="display-6 fw-bold">Shape Your Future</h1>
+            <h1 className="display-6 pt-5 fw-bold">Shape Your Future</h1>
             <p className="lead">Be a part of a dynamic and collaborative work culture.</p>
           </div>
         </div>

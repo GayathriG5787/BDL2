@@ -33,7 +33,7 @@
   width: 40px;
   height: 40px;
   margin: 0 auto;
-  background: #007bff;
+  background: #3B82F6;
   color: white;
   font-weight: bold;
   border-radius: 50%;
@@ -153,6 +153,19 @@
 .accordion-body button:hover {
   background: linear-gradient(to right, #0056b3, #0088cc);
   box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+.text-primary {
+  color: #3B82F6 !important;
+}
+
+.bg-primary {
+  background-color: #3B82F6 !important; /* Or your desired color */
+}
+
+.carousel-item {
+  min-height: 300px;
+
 }
 
 /* Entry animation */
