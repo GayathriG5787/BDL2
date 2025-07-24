@@ -165,8 +165,73 @@
 
 .carousel-item {
   min-height: 300px;
-
 }
+
+.accordion-body {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #222;
+  padding: 2rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.4s ease-in-out;
+  border-radius: 0 0 1rem 1rem;
+}
+
+/* Headings inside job descriptions */
+.accordion-body h6 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #007bff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Paragraphs */
+.accordion-body p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+/* Bullet lists */
+.accordion-body ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  list-style-type: disc;
+}
+
+.accordion-body li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  padding-left: 0.25rem;
+  position: relative;
+  color: #333;
+}
+
+/* Optional: add a custom bullet */
+.accordion-body li::marker {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Apply Now button */
+.accordion-body .btn-primary {
+  background: linear-gradient(to right, #007bff, #00bfff);
+  border: none;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 0.6rem 1.8rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.2);
+}
+
+.accordion-body .btn-primary:hover {
+  background: linear-gradient(to right, #0056b3, #0088cc);
+  box-shadow: 0 8px 24px rgba(0, 123, 255, 0.3);
+}
+
 
 /* Entry animation */
 @keyframes fadeIn {
