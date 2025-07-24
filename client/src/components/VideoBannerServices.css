@@ -1,7 +1,7 @@
 .video-banner-container {
   position: relative;
   width: 100%;
-  height: calc(100vh - 80px); /* Adjust if navbar height changes */
+  height: calc(100vh - 70px); /* Adjust if navbar height changes */
   margin-top: 70px;
   overflow: hidden;
 }
