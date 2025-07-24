@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
-import Careers from './pages/Careers';
+import Career from './pages/Career';
 import Contact from './pages/Contact';
 
 import WebsiteDevelopment from './pages/WebsiteDevelopment';
@@ -26,7 +26,7 @@ const App = () => {
         <Route path="/software-development" element={<SoftwareDevelopment />} />
         <Route path="/it-support" element={<ITSupport />} />
         <Route path="/social-media" element={<SocialMedia />} />
-        <Route path="/careers" element={<Careers />} />
+        <Route path="/careers" element={<Career />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
