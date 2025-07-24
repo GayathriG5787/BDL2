@@ -1,4 +1,4 @@
-.slider {
+.HomeServiceSlider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
@@ -8,8 +8,8 @@
   width: 100%;
 }
 
-.slider::before,
-.slider::after {
+.HomeServiceSlider::before,
+.HomeServiceSlider::after {
   content: "";
   height: 100px;
   position: absolute;
@@ -18,24 +18,24 @@
   background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.slider::after {
+.HomeServiceSlider::after {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
 }
 
-.slider::before {
+.HomeServiceSlider::before {
   left: 0;
   top: 0;
 }
 
-.slide-track {
+.HomeServiceSlider-track {
   display: flex;
   width: calc(250px * 14); /* 7 images * 2 (duplicated) */
   animation: scroll 40s linear infinite;
 }
 
-.slide {
+.HomeServiceSlide {
   height: 100px;
   width: 250px;
   display: flex;

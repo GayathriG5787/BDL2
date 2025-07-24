@@ -24,10 +24,9 @@ const Testimonials = () => {
       loop={true}
       slideToClickedSlide={true}
       speed={1000}
-      autoplay={{
-        delay: 2000,
-        disableOnInteraction: true,
-  }}
+      // autoplay={{
+      //   delay: 2000,
+      //   disableOnInteraction: true, }}
       keyboard={{ enabled: true }}
       mousewheel={{ thresholdDelta: 70 }}
       style={{ paddingInline: '4rem' }}

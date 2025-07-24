@@ -10,7 +10,7 @@ const About = () => {
       <CardSlider />
       <AboutBDL />
       <WhatWeDo />
-      <Footer />
+      
     </div>
   );
 };

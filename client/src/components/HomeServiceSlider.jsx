@@ -1,5 +1,5 @@
 import React from "react";
-import "./Slider.css"; // External CSS for styling
+import "./HomeServiceSlider.css"; // External CSS for styling
 
 const images = [
   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png",
@@ -11,13 +11,13 @@ const images = [
   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png",
 ];
 
-const Slider = () => {
+const HomeServiceSlider = () => {
   return (
-    <div className="slider">
-      <div className="slide-track">
+    <div className="HomeServiceSlider">
+      <div className="HomeServiceSlider-track">
         {[...images, ...images].map((src, index) => (
-          <div className="slide" key={index}>
-            <img src={src} alt={`Slide ${index + 1}`} height="100" width="250" />
+          <div className="HomeServiceSlide" key={index}>
+            <img src={src} alt={`HomeServiceSlide ${index + 1}`} height="100" width="250" />
           </div>
         ))}
       </div>
@@ -25,4 +25,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default HomeServiceSlider;
