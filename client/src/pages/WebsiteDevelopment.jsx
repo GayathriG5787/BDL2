@@ -2,11 +2,21 @@ import React from 'react'
 import websiteDevVideo from '../assets/videos/BannerWebDev.mp4';
 import VideoBannerServices from '../components/VideoBannerServices';
 import ServiceDescription from '../components/ServiceDescription.jsx';
-import WebDevServices from '../components/WebDevServices'
+import ServiceFeatureSection from '../components/ServiceFeatureSection.jsx';
 import WebsiteDevPricing from '../components/WebDevPricing'
 
 
 const WebsiteDevelopment = () => {
+
+    const services = [
+    { title: "Responsive Design", icon: "bi-laptop", description: "Mobile-first, cross-device compatibility." },
+    { title: "E-Commerce Integration", icon: "bi-cart-check", description: "Secure payment-ready online stores." },
+    { title: "Custom UI/UX", icon: "bi-palette", description: "Modern designs tailored to your brand." },
+    { title: "SEO Optimization", icon: "bi-graph-up-arrow", description: "Search engine-friendly architecture." },
+    { title: "CMS Integration", icon: "bi-file-earmark-code", description: "Easy content updates using CMS." },
+    { title: "Speed & Performance", icon: "bi-lightning-charge", description: "Optimized loading and responsiveness." },
+  ];
+
   return (
     <div>
         <VideoBannerServices
@@ -25,7 +35,7 @@ const WebsiteDevelopment = () => {
             ]}
             image="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80"
           />
-        <WebDevServices />
+        <ServiceFeatureSection sectionTitle="What We Offer in Website Development" services={services} />
         <WebsiteDevPricing />
     </div>
   )
