@@ -1,25 +1,24 @@
 import React from 'react';
+import Spline from '@splinetool/react-spline';
 
 const HeroSection = () => {
   return (
     <section style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
       
-      {/* Fullscreen Interactive 3D Model */}
-      <iframe
-        src="https://my.spline.design/interactiveaiwebsite-wt9VmNbGgXMKlavj84OiWCl2/"
-        frameBorder="0"
-        width="100%"
-        height="100%"
+      {/* Fullscreen Interactive 3D Model using Spline */}
+      <div
         style={{
           position: 'absolute',
           top: 0,
           left: 0,
-          zIndex: 2, // On top to be interactive
+          width: '100%',
+          height: '100%',
+          zIndex: 2,
           pointerEvents: 'auto',
-          border: 'none',
         }}
-        allow="autoplay; fullscreen"
-      ></iframe>
+      >
+        <Spline scene="https://prod.spline.design/wWbD2Tg3U8XlRSPe/scene.splinecode" />
+      </div>
 
       {/* Overlay Container */}
       <div
@@ -27,14 +26,14 @@ const HeroSection = () => {
           position: 'absolute',
           top: 0,
           left: 0,
-          zIndex: 3, // Above iframe
+          zIndex: 3,
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'flex-start',
           padding: '0 5%',
-          pointerEvents: 'none', // Let mouse events go to iframe
+          pointerEvents: 'none',
         }}
       >
         <div style={{ maxWidth: '600px', color: '#111827', pointerEvents: 'auto' }}>
