@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import VideoBannerServices from '../components/VideoBannerServices.jsx';
+import socialMediaVideo from '../assets/BannerSocialMedia.mp4';
 
-const SocialMedia = () => {
+const SocialMediaManagementPage = () => {
   return (
-    <div>SocialMedia</div>
-  )
-}
+    <>
+      <VideoBannerServices
+        videoSrc={socialMediaVideo}
+        title="Social Media Management"
+        subtitle="Engage, Grow, and Influence Your Audience Across Platforms"
+      />
+      {/* Additional content here */}
+    </>
+  );
+};
 
-export default SocialMedia
+export default SocialMediaManagementPage;

@@ -1,13 +1,19 @@
 import React from 'react'
-import VideoBannerServices from '../components/VideoBannerServices'
+import websiteDevVideo from '../assets/BannerWebsiteDev.mp4';
+import VideoBannerServices from '../components/VideoBannerServices';
 import WebDevDesc from '../components/WebDevDesc'
 import WebDevServices from '../components/WebDevServices'
 import WebsiteDevPricing from '../components/WebDevPricing'
 
+
 const WebsiteDevelopment = () => {
   return (
     <div>
-        <VideoBannerServices />
+        <VideoBannerServices
+        videoSrc={websiteDevVideo}
+        title="Website Development Services"
+        subtitle="Custom, Responsive, and High-Performance Websites"
+      />
         <WebDevDesc />
         <WebDevServices />
         <WebsiteDevPricing />

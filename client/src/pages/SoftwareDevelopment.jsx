@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import VideoBannerServices from '../components/VideoBannerServices.jsx';
+import softwareDevVideo from '../assets/BannerSoftDev.mp4';
 
-const SoftwareDevelopment = () => {
+const SoftwareDevelopmentPage = () => {
   return (
-    <div>SoftwareDevelopment</div>
-  )
-}
+    <>
+      <VideoBannerServices
+        videoSrc={softwareDevVideo}
+        title="Software Development Services"
+        subtitle="Tailored Software Solutions to Power Innovation and Growth"
+      />
+      {/* Additional content here */}
+    </>
+  );
+};
 
-export default SoftwareDevelopment
+export default SoftwareDevelopmentPage;

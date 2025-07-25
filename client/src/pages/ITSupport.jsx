@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import VideoBannerServices from '../components/VideoBannerServices.jsx';
+import itSupportVideo from '/src/assets/BannerITSupport.mp4';
 
-const ITSupport = () => {
+const ITSupportPage = () => {
   return (
-    <div>ITSupport</div>
-  )
-}
+    <>
+      <VideoBannerServices
+        videoSrc={itSupportVideo}
+        title="IT Support Services"
+        subtitle="Reliable, Scalable, and Secure IT Solutions for Your Business"
+      />
+      {/* Additional content here */}
+    </>
+  );
+};
 
-export default ITSupport
+export default ITSupportPage;
