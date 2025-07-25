@@ -5,7 +5,7 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
 }
 
 .HomeServiceSlider::before,

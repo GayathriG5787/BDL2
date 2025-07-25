@@ -2,7 +2,6 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import './Testimonials.css';
 
 const testimonials = [
   {
@@ -37,7 +36,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-5 bg-light">
+    <section className="py-5">
       <div className="container text-center">
         <h2 className="fw-bold mb-4">Our happy clients say about us</h2>
 
@@ -61,7 +60,7 @@ const Testimonials = () => {
         >
           {testimonials.map((t, i) => (
             <SwiperSlide key={i}>
-              <div className="p-4 bg-white rounded-3 shadow-sm h-100 d-flex flex-column justify-content-between">
+              <div className="p-4 bg-white rounded-3 shadow h-100 d-flex flex-column justify-content-between">
                 <div>
                   <div className="d-flex justify-content-start mb-2">
                     {[...Array(t.stars)].map((_, idx) => (
