@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import logo from '../assets/logo.png';
 import "./Navbar.css";
 
@@ -55,7 +56,7 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link custom-link" to="/contact">Contact Us</Link>
+              <HashLink className="nav-link custom-link" smooth to="/#contact">Contact</HashLink>
             </li>
           </ul>
         </div>

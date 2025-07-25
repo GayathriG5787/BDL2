@@ -14,7 +14,7 @@ import "./ContactUs.css";
 
 const ContactUs = () => {
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <div className="container py-5">
         <div className="row g-5 align-items-center">
 
