@@ -2,6 +2,7 @@ import React from 'react';
 import VideoBannerServices from '../components/VideoBannerServices.jsx';
 import ServiceDescription from '../components/ServiceDescription.jsx';
 import ServiceFeatureSection from '../components/ServiceFeatureSection.jsx';
+import PricingSection from '../components/PricingSection.jsx';
 import socialMediaVideo from '../assets/videos/BannerSocialMedia.mp4';
 
 const SocialMediaManagementPage = () => {
@@ -13,6 +14,48 @@ const SocialMediaManagementPage = () => {
     { title: "Analytics Reports", icon: "bi-bar-chart", description: "Performance tracking and growth insights." },
     { title: "Ad Campaigns", icon: "bi-megaphone", description: "Targeted ads to boost reach and ROI." },
     { title: "Platform Optimization", icon: "bi-sliders", description: "Optimized profiles for every major platform." },
+  ];
+
+    const plans = [
+    {
+      title: "Starter",
+      price: "£199/month",
+      features: [
+        "2 Platforms",
+        "8 Posts/Month",
+        "Basic Graphics",
+        "Monthly Report",
+        "Email Support",
+      ],
+      buttonText: "Get Started",
+      highlight: false,
+    },
+    {
+      title: "Growth",
+      price: "£349/month",
+      features: [
+        "4 Platforms",
+        "15 Posts/Month",
+        "Custom Graphics",
+        "Ad Campaign Setup",
+        "Priority Support",
+      ],
+      buttonText: "Get Started",
+      highlight: true,
+    },
+    {
+      title: "Pro",
+      price: "£599/month",
+      features: [
+        "All Platforms",
+        "Unlimited Posts",
+        "Video Editing",
+        "Ad Management",
+        "24/7 Support",
+      ],
+      buttonText: "Get Started",
+      highlight: false,
+    },
   ];
 
   return (
@@ -34,6 +77,12 @@ const SocialMediaManagementPage = () => {
           image="https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg"
         />
         <ServiceFeatureSection sectionTitle="What We Offer in Social Media Management" services={services} />
+
+        <PricingSection
+      sectionTitle="Social Media Management Pricing"
+      description="Flexible plans to boost your brand visibility online."
+      plans={plans}
+    />
     </>
   );
 };

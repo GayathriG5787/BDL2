@@ -3,7 +3,7 @@ import websiteDevVideo from '../assets/videos/BannerWebDev.mp4';
 import VideoBannerServices from '../components/VideoBannerServices';
 import ServiceDescription from '../components/ServiceDescription.jsx';
 import ServiceFeatureSection from '../components/ServiceFeatureSection.jsx';
-import WebsiteDevPricing from '../components/WebDevPricing'
+import PricingSection from '../components/PricingSection.jsx';
 
 
 const WebsiteDevelopment = () => {
@@ -15,6 +15,30 @@ const WebsiteDevelopment = () => {
     { title: "SEO Optimization", icon: "bi-graph-up-arrow", description: "Search engine-friendly architecture." },
     { title: "CMS Integration", icon: "bi-file-earmark-code", description: "Easy content updates using CMS." },
     { title: "Speed & Performance", icon: "bi-lightning-charge", description: "Optimized loading and responsiveness." },
+  ];
+
+    const plans = [
+    {
+      title: "Basic",
+      price: "£299",
+      features: ["1 Page Website", "Responsive Design", "Basic SEO", "Free Hosting (1 Year)", "Email Support"],
+      buttonText: "Get Started",
+      highlight: false,
+    },
+    {
+      title: "Standard",
+      price: "£599",
+      features: ["Up to 5 Pages", "Custom Design", "SEO Optimization", "Free Hosting (1 Year)", "Priority Support"],
+      buttonText: "Get Started",
+      highlight: true,
+    },
+    {
+      title: "Premium",
+      price: "£999",
+      features: ["Unlimited Pages", "Custom UI/UX", "Advanced SEO", "Free Hosting (2 Years)", "24/7 Support"],
+      buttonText: "Get Started",
+      highlight: false,
+    },
   ];
 
   return (
@@ -36,7 +60,11 @@ const WebsiteDevelopment = () => {
             image="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80"
           />
         <ServiceFeatureSection sectionTitle="What We Offer in Website Development" services={services} />
-        <WebsiteDevPricing />
+        <PricingSection
+      sectionTitle="Website Development Pricing"
+      description="Choose the plan that fits your business needs."
+      plans={plans}
+    />
     </div>
   )
 }

@@ -1,61 +1,15 @@
+// PricingSection.js
 import React from "react";
 
-const PricingPlans = () => {
-  const plans = [
-    {
-      title: "Basic",
-      price: "£299",
-      features: [
-        "1 Page Website",
-        "Responsive Design",
-        "Basic SEO",
-        "Free Hosting (1 Year)",
-        "Email Support",
-      ],
-      buttonText: "Get Started",
-      highlight: false,
-    },
-    {
-      title: "Standard",
-      price: "£599",
-      features: [
-        "Up to 5 Pages",
-        "Custom Design",
-        "SEO Optimization",
-        "Free Hosting (1 Year)",
-        "Priority Support",
-      ],
-      buttonText: "Get Started",
-      highlight: true, // Middle card with gradient
-    },
-    {
-      title: "Premium",
-      price: "£999",
-      features: [
-        "Unlimited Pages",
-        "Custom UI/UX",
-        "Advanced SEO",
-        "Free Hosting (2 Years)",
-        "24/7 Support",
-      ],
-      buttonText: "Get Started",
-      highlight: false,
-    },
-  ];
-
+const PricingSection = ({ sectionTitle, description, plans }) => {
   return (
-    <section
-      className="py-5"
-      style={{
-        background: "linear-gradient(to right, #eaf4ff, #f5faff)",
-      }}
-    >
+    <section className="py-5" style={{ background: "linear-gradient(to right, #eaf4ff, #f5faff)" }}>
       <div className="container text-center">
         <h2 className="fw-bold mb-3" style={{ color: "#0c1e3c", fontSize: "2.5rem" }}>
-          Website Development Pricing
+          {sectionTitle}
         </h2>
         <p className="text-muted mb-5" style={{ fontSize: "1.15rem" }}>
-          Choose the plan that fits your business needs.
+          {description}
         </p>
 
         <div className="row justify-content-center">
@@ -69,20 +23,14 @@ const PricingPlans = () => {
                     ? "linear-gradient(135deg, #007bff, #0056d2)"
                     : "#ffffff",
                   color: plan.highlight ? "#ffffff" : "#0d1b2a",
-                  border: plan.highlight
-                    ? "none"
-                    : "1px solid rgba(0,0,0,0.08)",
+                  border: plan.highlight ? "none" : "1px solid rgba(0,0,0,0.08)",
                   transition: "transform 0.3s ease",
-                  minHeight: "520px", // Increased card height
+                  minHeight: "520px",
                   display: "flex",
                   flexDirection: "column",
                 }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.transform = "translateY(-8px)")
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.transform = "translateY(0)")
-                }
+                onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-8px)")}
+                onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
               >
                 <div className="card-body d-flex flex-column p-5">
                   <h4 className="fw-bold mb-4" style={{ fontSize: "1.8rem" }}>
@@ -108,9 +56,7 @@ const PricingPlans = () => {
                     ))}
                   </ul>
                   <button
-                    className={`btn ${
-                      plan.highlight ? "btn-light" : "btn-primary"
-                    } mt-auto py-2 px-4`}
+                    className={`btn ${plan.highlight ? "btn-light" : "btn-primary"} mt-auto py-2 px-4`}
                     style={{
                       borderRadius: "25px",
                       fontWeight: "500",
@@ -129,4 +75,4 @@ const PricingPlans = () => {
   );
 };
 
-export default PricingPlans;
+export default PricingSection;

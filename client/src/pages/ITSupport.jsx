@@ -2,6 +2,7 @@ import React from 'react';
 import VideoBannerServices from '../components/VideoBannerServices.jsx';
 import ServiceDescription from '../components/ServiceDescription.jsx';
 import ServiceFeatureSection from '../components/ServiceFeatureSection.jsx';
+import PricingSection from '../components/PricingSection.jsx';
 import itSupportVideo from '../assets/videos/BannerITSupport.mp4';
 
 
@@ -13,6 +14,30 @@ const ITSupportPage = () => {
     { title: "Hardware Support", icon: "bi-cpu", description: "Assistance for desktops, laptops, printers, etc." },
     { title: "Data Backup", icon: "bi-hdd", description: "Regular backups to keep your data safe." },
     { title: "Security Solutions", icon: "bi-shield-lock", description: "Protection from viruses, malware & threats." },
+  ];
+
+    const plans = [
+    {
+      title: "Starter",
+      price: "£149/month",
+      features: ["Remote Support", "System Monitoring", "Email Support", "Monthly Reports", "Basic Security"],
+      buttonText: "Get Started",
+      highlight: false,
+    },
+    {
+      title: "Professional",
+      price: "£299/month",
+      features: ["On-site Support", "Proactive Maintenance", "24/7 Monitoring", "Priority Support", "Advanced Security"],
+      buttonText: "Get Started",
+      highlight: true,
+    },
+    {
+      title: "Enterprise",
+      price: "£499/month",
+      features: ["Dedicated Technician", "Custom SLAs", "Advanced Reporting", "Disaster Recovery", "Unlimited Support"],
+      buttonText: "Get Started",
+      highlight: false,
+    },
   ];
 
   return (
@@ -34,6 +59,12 @@ const ITSupportPage = () => {
           image="https://images.pexels.com/photos/1181317/pexels-photo-1181317.jpeg"
         />
         <ServiceFeatureSection sectionTitle="What We Offer in IT Support" services={services} />
+
+        <PricingSection
+      sectionTitle="IT Support Pricing"
+      description="Affordable plans tailored for your IT infrastructure."
+      plans={plans}
+    />
     </>
   );
 };

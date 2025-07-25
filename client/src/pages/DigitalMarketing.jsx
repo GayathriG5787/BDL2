@@ -2,6 +2,7 @@ import React from 'react';
 import VideoBannerServices from '../components/VideoBannerServices.jsx';
 import ServiceDescription from '../components/ServiceDescription.jsx';
 import ServiceFeatureSection from '../components/ServiceFeatureSection.jsx';
+import PricingSection from '../components/PricingSection.jsx';
 import digitalMarketingVideo from '../assets/videos/Bannerdigital.mp4';
 
 
@@ -15,6 +16,49 @@ const DigitalMarketingPage = () => {
     { title: "Conversion Optimization", icon: "bi-speedometer2", description: "Turn traffic into loyal customers." },
     { title: "Analytics & Reporting", icon: "bi-pie-chart", description: "Measure and refine with performance data." },
   ];
+
+    const plans = [
+    {
+      title: "Essentials",
+      price: "£299/month",
+      features: [
+        "SEO Basics",
+        "Email Marketing",
+        "Monthly Analytics",
+        "Blog Setup",
+        "Email Support",
+      ],
+      buttonText: "Get Started",
+      highlight: false,
+    },
+    {
+      title: "Business",
+      price: "£499/month",
+      features: [
+        "SEO + SEM",
+        "Lead Generation",
+        "Ad Campaigns",
+        "Bi-weekly Reporting",
+        "Priority Support",
+      ],
+      buttonText: "Get Started",
+      highlight: true,
+    },
+    {
+      title: "Enterprise",
+      price: "£899/month",
+      features: [
+        "Full Funnel Strategy",
+        "A/B Testing",
+        "Conversion Optimization",
+        "Dedicated Manager",
+        "24/7 Support",
+      ],
+      buttonText: "Get Started",
+      highlight: false,
+    },
+  ];
+
 
   return (
     <>
@@ -35,6 +79,12 @@ const DigitalMarketingPage = () => {
           image="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
         />
         <ServiceFeatureSection sectionTitle="What We Offer in Digital Marketing" services={services} />
+
+        <PricingSection
+      sectionTitle="Digital Marketing Pricing"
+      description="Drive growth with results-oriented marketing packages."
+      plans={plans}
+    />
     </>
   );
 };
