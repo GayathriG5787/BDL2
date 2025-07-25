@@ -5,14 +5,14 @@ import Testimonials from '../components/Testimonials.jsx'
 import HomeServiceSlider from '../components/HomeServiceSlider.jsx'
 import ContactUs from '../components/ContactUs.jsx'
 import Footer from '../components/Footer.jsx'
-import Services from '../components/ServicesH.jsx'
+import ServicesHome from '../components/ServicesHome.jsx'
 
-const App = () => {
+const Home = () => {
   return (
     <div>
       <Hero />
       <HomeServiceSlider />
-      <Services />
+      <ServicesHome />
       <Testimonials />
       <ContactUs />
       
@@ -20,7 +20,7 @@ const App = () => {
   )
 }
 
-export default App
+export default Home
 
 
 

@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
+import map from '../assets/map.png'
 
 const ContactUs = () => {
   return (
@@ -45,18 +46,15 @@ const ContactUs = () => {
           </div>
 
           {/* Right: Google Map */}
-          <div className="col-lg-6">
-            <iframe
-              title="Company Location"
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d19848.08846334991!2d0.03509619540442071!3d51.54969623973179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sUnit%201-I%2C%20Romford%20Road%2C%20London%2C%20England%2C%20E12%206BT!5e0!3m2!1sen!2sin!4v1753272372316!5m2!1sen!2sin"
-              width="100%"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="rounded shadow-sm"
-            ></iframe>
+            <div className="col-lg-6 text-center">
+            <a href="https://www.google.com/maps/search/Unit+1-I,+Romford+Road,+London,+England,+E12+6BT/@51.549696,0.035096,13z?hl=en&entry=ttu&g_ep=EgoyMDI1MDcyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+              <img 
+                src={map} 
+                alt="Contact Visual" 
+                className="img-fluid rounded shadow-sm"
+                style={{ maxHeight: "400px", cursor: "pointer" }}
+              />
+            </a>
           </div>
 
         </div>
