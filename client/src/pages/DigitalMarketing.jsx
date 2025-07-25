@@ -1,6 +1,6 @@
 import React from 'react';
 import VideoBannerServices from '../components/VideoBannerServices.jsx';
-import digitalMarketingVideo from '../assets/BannerDigital.mp4';
+import digitalMarketingVideo from '../assets/videos/Bannerdigital.mp4';
 
 const DigitalMarketingPage = () => {
   return (

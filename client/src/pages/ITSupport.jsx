@@ -1,6 +1,6 @@
 import React from 'react';
 import VideoBannerServices from '../components/VideoBannerServices.jsx';
-import itSupportVideo from '/src/assets/BannerITSupport.mp4';
+import itSupportVideo from '../assets/videos/BannerITSupport.mp4';
 
 const ITSupportPage = () => {
   return (

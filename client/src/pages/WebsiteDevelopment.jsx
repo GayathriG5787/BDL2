@@ -1,5 +1,5 @@
 import React from 'react'
-import websiteDevVideo from '../assets/BannerWebsiteDev.mp4';
+import websiteDevVideo from '../assets/videos/BannerWebDev.mp4';
 import VideoBannerServices from '../components/VideoBannerServices';
 import WebDevDesc from '../components/WebDevDesc'
 import WebDevServices from '../components/WebDevServices'

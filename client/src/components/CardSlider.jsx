@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./CardSlider.css";
+import slide1 from "../assets/videos/slide1.mp4";
+import slide2 from "../assets/videos/slide2.mp4";
 
 const rawSlides = [
-  { id: "clubs", video: "/videos/slide1.mp4" },
-  { id: "hearts", video: "/videos/slide2.mp4" }
+  { id: "clubs", video: slide1 },
+  { id: "hearts", video: slide2 }
 ];
+
 
 const slides = [
   rawSlides[rawSlides.length - 1],

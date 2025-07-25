@@ -1,6 +1,6 @@
 import React from 'react';
 import VideoBannerServices from '../components/VideoBannerServices.jsx';
-import socialMediaVideo from '../assets/BannerSocialMedia.mp4';
+import socialMediaVideo from '../assets/videos/BannerSocialMedia.mp4';
 
 const SocialMediaManagementPage = () => {
   return (

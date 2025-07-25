@@ -1,6 +1,6 @@
 import React from 'react';
 import VideoBannerServices from '../components/VideoBannerServices.jsx';
-import softwareDevVideo from '../assets/BannerSoftDev.mp4';
+import softwareDevVideo from '../assets/videos/BannerSoftDev.mp4';
 
 const SoftwareDevelopmentPage = () => {
   return (
