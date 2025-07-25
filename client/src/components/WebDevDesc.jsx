@@ -2,7 +2,7 @@ import React from 'react';
 
 const WebsiteDevelopmentDescription = () => {
   return (
-    <section className="py-5 webdev-description-section">
+    <section className="webdev-description-section" style={{ paddingTop : "7rem", paddingBottom : '7rem', background: "linear-gradient(to right, #eaf4ff, #f5faff)"}}>
       <div className="container">
         <div className="row align-items-center">
           
