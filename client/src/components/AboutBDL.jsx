@@ -5,7 +5,7 @@ import aboutImg from '../assets/about-image.png';
 const AboutBDL = () => {
   return (
     <div>
-        <div className="about-container-fluid py-5">
+        <div className="about-container-fluid" style={{paddingTop : '6rem', paddingBottom: "6rem"}}>
         {/* Header */}
         <div className="text-center mb-5">
           <h2 className="about-heading fw-bold">About BDL</h2>
@@ -21,6 +21,11 @@ const AboutBDL = () => {
             <p className="about-text text-muted">
               From startups to enterprises, we partner with organizations to build powerful web platforms, engaging user interfaces, and secure IT systems that scale.
             </p>
+            <p className="about-text text-muted">
+              At BDL, innovation meets excellence, our team of passionate professionals continuously strives to harness emerging technologies to drive meaningful business outcomes.
+            </p>
+
+
 
             {/* Contact Us Button */}
             <a className='btn btn-primary mt-4'

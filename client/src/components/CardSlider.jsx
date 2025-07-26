@@ -5,7 +5,7 @@ import slide2 from "../assets/videos/slide2.mp4";
 
 const CardSlider = () => {
   return (
-    <div id="videoCarousel" className="carousel slide custom-slider-wrapper mb-5" data-bs-ride="carousel">
+    <div id="videoCarousel" className="carousel slide custom-slider-wrapper" data-bs-ride="carousel">
       <div className="carousel-inner video-carousel-container rounded-4">
         <div className="carousel-item active custom-slide">
           <video
