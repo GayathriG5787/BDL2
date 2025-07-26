@@ -3,8 +3,6 @@ import { Tabs, Tab, Accordion } from 'react-bootstrap';
 import './Career.css';
 
 const Career = () => {
-  const [activeKey, setActiveKey] = useState(null);
-
   const jobData = {
     Development: [
       {
@@ -138,24 +136,37 @@ const Career = () => {
     ],
   };
 
+
+  const [activeTab, setActiveTab] = useState("Development");
+  const [activeKey, setActiveKey] = useState("Development-0");
+
   const handleToggle = (key) => {
-    setActiveKey(activeKey === key ? null : key);
+    setActiveKey((prevKey) => (prevKey === key ? null : key));
+  };
+
+  const handleTabSelect = (tabKey) => {
+    setActiveTab(tabKey);
+    setActiveKey(`${tabKey}-0`);
   };
 
   return (
     <div className="career-page">
-
       {/* Hero Section */}
-      {/* <div id="heroCarousel" className="carousel slide mb-5" data-bs-ride="carousel"> */}
       <div id="heroCarousel" className="carousel slide mb-5">
         <div className="carousel-inner glassy-container rounded-4">
-          <div className="carousel-item active text-center p-5 bg-primary text-white">
-            <h1 className="display-5 pt-5 fw-bold">Join Our Team</h1>
-            <p className="lead">Explore opportunities to work, grow, and lead with us!</p>
+          <div className="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1551434678-e076c223a692?fit=crop&w=1200&q=80"
+              className="d-block w-100 rounded-4"
+              alt="Join Our Team"
+            />
           </div>
-          <div className="carousel-item text-center p-5 bg-info text-white">
-            <h1 className="display-6 pt-5 fw-bold">Shape Your Future</h1>
-            <p className="lead">Be a part of a dynamic and collaborative work culture.</p>
+          <div className="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?fit=crop&w=1200&q=80"
+              className="d-block w-100 rounded-4"
+              alt="Shape Your Future"
+            />
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
@@ -166,23 +177,46 @@ const Career = () => {
         </button>
       </div>
 
-       {/* Hiring Procedure Section */}
-      <div className="container mb-5">
-        <h2 className="mb-4 text-primary fw-bold">Our Hiring Process</h2>
-        <div className="d-flex justify-content-between align-items-center flex-wrap roadmap">
-          {["Application", "Shortlisting", "Interview", "Offer", "Onboarding"].map((step, idx) => (
-            <div key={idx} className="roadmap-step text-center glassy-step rounded-3 m-2">
-              <div className="step-circle mb-2">{idx + 1}</div>
-              <p className="fw-semibold">{step}</p>
+      {/* Hiring Procedure Section */}
+      <div className="container mb-5 hiring-procedure-section">
+        <h2 className="text-center fw-bold mb-3">Our Hiring Procedure</h2>
+        <p className="text-center text-muted mb-5">
+          Here are the steps of the selection process for hiring employees. Tell us about your skills and aspirations.
+        </p>
+
+        <div className="row justify-content-center text-center gx-4 gy-5">
+          {[
+            {
+              title: "Select the Position you want to Apply",
+              desc: "Choose a role that matches your skills and career goals.",
+            },
+            {
+              title: "Panel Interview by Senior Members",
+              desc: "Meet with senior team members for an in-depth assessment.",
+            },
+            {
+              title: "Finalization of Hired Candidates",
+              desc: "Final evaluation and selection of successful applicants.",
+            },
+          ].map((step, idx) => (
+            <div key={idx} className="col-md-4 px-4 position-relative hiring-step">
+              <div className="circle-number mb-3">{idx + 1}</div>
+              <h5 className="fw-bold text-primary">{step.title}</h5>
+              <p className="text-muted">{step.desc}</p>
+              {idx < 2 && <div className="connector d-none d-md-block"></div>}
             </div>
           ))}
         </div>
       </div>
 
-      {/* Job Openings Section with Tabs and Accordions */}
+      {/* Job Openings Section */}
       <div className="container mb-5">
-        <h2 className=" text-primary mb-4 fw-bold">Current Openings</h2>
-        <Tabs defaultActiveKey="Development" className="mb-3  glassy-tabs">
+        <h2 className="mb-4 fw-bold">Current Openings</h2>
+        <Tabs
+          activeKey={activeTab}
+          onSelect={handleTabSelect}
+          className="mb-3 glassy-tabs"
+        >
           {Object.keys(jobData).map((dept, i) => (
             <Tab eventKey={dept} title={dept} key={i}>
               <Accordion activeKey={activeKey}>
@@ -200,7 +234,7 @@ const Career = () => {
                       <Accordion.Body>
                         <div dangerouslySetInnerHTML={{ __html: job.desc }} />
                         <div className="mt-3">
-                          <button className="btn btn-primary">Apply Now</button>
+                          <button className="btn btn-primary rounded-pill">Apply Now</button>
                         </div>
                       </Accordion.Body>
                     </Accordion.Item>
@@ -211,9 +245,6 @@ const Career = () => {
           ))}
         </Tabs>
       </div>
-
-
-
     </div>
   );
 };

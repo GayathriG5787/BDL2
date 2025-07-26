@@ -9,7 +9,6 @@
   backdrop-filter: blur(10px);
   border-radius: 1rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
 }
 
 .roadmap {
@@ -139,22 +138,6 @@
   margin-bottom: 0.5rem;
 }
 
-.accordion-body button {
-  background: linear-gradient(to right, #007bff, #00bfff);
-  border: none;
-  color: white;
-  font-weight: 600;
-  border-radius: 25px;
-  padding: 0.5rem 1.5rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
-}
-
-.accordion-body button:hover {
-  background: linear-gradient(to right, #0056b3, #0088cc);
-  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
-}
-
 .text-primary {
   color: #3B82F6 !important;
 }
@@ -216,20 +199,54 @@
 }
 
 /* Apply Now button */
-.accordion-body .btn-primary {
-  background: linear-gradient(to right, #007bff, #00bfff);
-  border: none;
-  font-weight: 600;
-  border-radius: 25px;
-  padding: 0.6rem 1.8rem;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.2);
+.carousel-inner {
+  height: calc(100vh - 70px);
 }
 
-.accordion-body .btn-primary:hover {
-  background: linear-gradient(to right, #0056b3, #0088cc);
-  box-shadow: 0 8px 24px rgba(0, 123, 255, 0.3);
+.hiring-procedure-section {
+  background: #f3f7fd;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+}
+
+.hiring-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.circle-number {
+  width: 48px;
+  height: 48px;
+  background-color: #0d6efd;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Line connector between steps */
+.connector {
+  position: absolute;
+  top: 24px;
+  right: -50%;
+  width: 100%;
+  height: 2px;
+  background-color: #0d6efd;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .connector {
+    display: none;
+  }
 }
 
 

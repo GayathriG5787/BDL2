@@ -39,17 +39,17 @@ const Testimonials = () => {
   return (
     <section className="" style={{paddingBottom: '5rem'}}>
       <div className="container text-center">
-        <h2 className="fw-bold mb-4 pb-5">Our happy clients say about us</h2>
+        <h2 className="fw-bold pb-5">Our happy clients say about us</h2>
 
         <Swiper
-          // modules={[Autoplay]}
+          modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={2}
           loop={true}
-          // autoplay={{
-          //   delay: 3000, // ⏱ 3 seconds pause on each slide
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 3000, // ⏱ 3 seconds pause on each slide
+            disableOnInteraction: false,
+          }}
           speed={500} // Smooth transition
           grabCursor={true}
           allowTouchMove={true}
