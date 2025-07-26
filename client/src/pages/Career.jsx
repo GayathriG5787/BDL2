@@ -97,7 +97,7 @@ const Career = () => {
         desc: `
           <p>We are seeking a dynamic and strategic <strong>Digital Marketing Executive</strong> to manage and grow our online presence across various digital platforms. The successful candidate will be responsible for planning, executing, and optimizing digital marketing campaigns to boost brand awareness, drive traffic, and generate qualified leads.</p>
 
-          <h6><strong>Key Responsibilities:</strong></h6>
+          <h6>Key Responsibilities:</h6>
           <ul>
             <li>Plan and execute SEO/SEM, email, social media, and display advertising campaigns.</li>
             <li>Design and manage content strategies across digital channels (Facebook, Instagram, LinkedIn, Google, etc.).</li>

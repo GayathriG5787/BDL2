@@ -36,12 +36,13 @@
   backdrop-filter: blur(10px);
   border-radius: 10px;
   margin: 0 5px;
+  font-size: 1.5rem;
   font-weight: 600;
   transition: background 0.3s;
 }
 
 .glassy-tabs .nav-link.active {
-  background-color: linear-gradient(to right, #e9f3ff, #f4faff);
+  background-color: linear-gradient(to right, #4488db, #2c86cf) !important;
   border: none;
 }
 
@@ -55,10 +56,25 @@
 
 .accordion-button {
   font-weight: bold;
-  background: transparent;
-  backdrop-filter: blur(5px);
+  font-size: 1.2rem;
+  color: #fff; /* White text */
+  background: linear-gradient(90deg, #3B82F6, #60A5FA); /* Gradient using shades of blue */
   border: none;
-  color: #333;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(5px);
+  text-transform: uppercase;
+}
+
+.accordion-button:hover {
+  background: linear-gradient(90deg, #2563EB, #3B82F6); /* Slightly darker gradient on hover */
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(90deg, #1E3A8A, #3B82F6); /* Even darker gradient when expanded */
+  color: #fff;
+  border-bottom: 1px solid rgba(0, 123, 255, 0.3);
 }
 
 .accordion-body {
@@ -80,28 +96,6 @@
 .glassy-accordion:hover {
   transform: scale(1.01);
   box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
-}
-
-.accordion-button {
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #003366;
-  background: linear-gradient(to right, #dff1ff, #f4faff);
-  border: none;
-  padding: 1rem 1.5rem;
-  transition: all 0.3s ease-in-out;
-  backdrop-filter: blur(5px);
-}
-
-.accordion-button:hover {
-  background-color: rgba(0, 123, 255, 0.15);
-  color: #0056b3;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: rgba(0, 123, 255, 0.3);
-  color: #007bff;
-  border-bottom: 1px solid rgba(0, 123, 255, 0.3);
 }
 
 .accordion-header {
@@ -225,6 +219,10 @@
   height: 2px;
   background-color: #0d6efd;
   z-index: 1;
+}
+
+.accordion-body h6 {
+  text-transform: none; /* Ensures headings like Key Responsibilities stay normal case */
 }
 
 @media (max-width: 768px) {
