@@ -6,7 +6,7 @@ const ContactUs = () => {
   return (
     <section className="contact-section" id="contact">
       <div className="container py-5">
-        <h2 className="fw-bold mb-4 pb-5 text-center">Contact Us</h2>
+        <h2 className="contact-title fw-bold mb-4 pb-5 text-center">Contact Us</h2>
         <div className="glass-card p-4 p-md-5">
           <div className="row g-5 align-items-center">
 
@@ -18,20 +18,20 @@ const ContactUs = () => {
               <form>
                 <div className="row g-3">
                   <div className="col-md-6">
-                    <input type="text" className="form-control bg-white" placeholder="First Name" />
+                    <input type="text" className="form-control" placeholder="First Name" />
                   </div>
                   <div className="col-md-6">
-                    <input type="text" className="form-control bg-white" placeholder="Last Name" />
+                    <input type="text" className="form-control" placeholder="Last Name" />
                   </div>
                   <div className="col-md-6">
-                    <input type="email" className="form-control bg-white" placeholder="Email" />
+                    <input type="email" className="form-control" placeholder="Email" />
                   </div>
                   <div className="col-md-6">
-                    <input type="tel" className="form-control bg-white" placeholder="Phone Number" />
+                    <input type="tel" className="form-control" placeholder="Phone Number" />
                   </div>
                   <div className="col-12">
                     <textarea
-                      className="form-control shadow-sm bg-light"
+                      className="form-control shadow-sm"
                       rows="4"
                       placeholder="What do you have in mind?"
                     ></textarea>
@@ -56,8 +56,8 @@ const ContactUs = () => {
                 <img
                   src={map}
                   alt="Contact Visual"
-                  className="img-fluid rounded shadow-sm"
-                  style={{ maxHeight: "400px", width: "100%", objectFit: "cover", cursor: "pointer" }}
+                  className="img-fluid shadow-sm"
+                  style={{ maxHeight: "400px", width: "100%", objectFit: "cover", cursor: "pointer", borderRadius: "1.5rem" }}
                 />
               </a>
             </div>

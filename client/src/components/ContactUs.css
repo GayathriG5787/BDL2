@@ -20,6 +20,38 @@
   color: #000;
 }
 
+.contact-title {
+  font-size: 2.3rem;
+}
+
 .contact-section .form-control:focus {
   color: #000;
 }
+
+.contact-section .form-control {
+  border: none;
+  border-bottom: 2px solid #3b82f6;
+  border-radius: 0;
+  padding: 0.5rem 0;
+  background: transparent;
+  box-shadow: none;
+  color: #000;
+  transition: border-color 0.3s ease;
+}
+
+.contact-section .form-control:focus {
+  border-bottom: 2px solid #2563eb; /* Slightly darker blue on focus */
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.contact-section textarea.form-control {
+  border: none;
+  border-bottom: 2px solid #3b82f6;
+  border-radius: 0;
+  background: transparent;
+  color: #000;
+  resize: none;
+}
+

@@ -39,7 +39,7 @@ const Testimonials = () => {
   return (
     <section className="" style={{paddingBottom: '5rem'}}>
       <div className="container text-center">
-        <h2 className="fw-bold pb-5">Our happy clients say about us</h2>
+        <h2 className="testimonials-title fw-bold pb-5">Our happy clients say about us</h2>
 
         <Swiper
           modules={[Autoplay]}
