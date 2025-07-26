@@ -4,13 +4,13 @@ import map from '../assets/map.png'
 
 const ContactUs = () => {
   return (
-    <section className="my-2 contact-section bg-light" id="contact">
+    <section className="contact-section bg-light" id="contact">
       <div className="container py-5">
         <div className="row g-5 align-items-center">
           
           {/* Left: Contact Form */}
           <div className="col-lg-6">
-            <h2 className="fw-bold mb-3">Let's talk</h2>
+            <h2 className="fw-bold mb-3 py-3">Let's talk</h2>
             <p className="text-muted mb-4 fs-6">
               We'd love to hear from you. Fill out the form and we'll be in touch shortly.
             </p>

@@ -12,3 +12,15 @@
   transform: translateY(-8px);
   border: 2px solid #3b82f6;
 }
+
+.swiper-slide {
+  display: flex;
+  height: auto !important; /* ensures content defines the height */
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}

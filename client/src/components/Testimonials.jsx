@@ -60,14 +60,15 @@ const Testimonials = () => {
           }}
         >
           {testimonials.map((t, i) => (
-          <SwiperSlide key={i}>
+          <SwiperSlide key={i} className="h-130 my-2">
             <div
-            className="testimonial-card m-2 p-4 rounded-3 h-100 d-flex flex-column justify-content-between text-start"
-            style={{
-              minHeight: "300px",
-              gap: "1.5rem",
-            }}
-          >
+              className="testimonial-card my-2 h-100 d-flex flex-column justify-content-between text-start"
+              style={{
+                minHeight: "350px", // or any height you prefer
+                padding: "2rem",
+                gap: "1.5rem",
+              }}
+            >
 
               {/* Star Rating + Quote */}
               <div>
