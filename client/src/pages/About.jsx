@@ -1,16 +1,18 @@
 import React from 'react';
 import CardSlider from '../components/CardSlider.jsx';
 import AboutBDL from '../components/AboutBDL.jsx';
-import WhatWeDo from '../components/WhatWeDo.jsx';
+import CoreValues from '../components/CoreValues.jsx';
 import MissionVisionTeam from '../components/MissionVisionTeam.jsx';
+import ServicesAbout from "../components/ServicesAbout.jsx"
 
 const About = () => {
   return (
     <div>
       <CardSlider />
       <AboutBDL />
-      <WhatWeDo />
+      <CoreValues />
       <MissionVisionTeam />
+      <ServicesAbout />
       
     </div>
   );

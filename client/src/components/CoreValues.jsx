@@ -1,5 +1,5 @@
 import React from "react";
-import "./WhatWeDo.css";
+import "./CoreValues.css";
 
 const coreValues = [
   {
@@ -36,7 +36,7 @@ const coreValues = [
 
 const WhatWeDo = () => {
   return (
-    <section className="what-we-do-section py-5" style={{ background: "linear-gradient(to right, #eaf4ff, #f5faff)" }}>
+    <section className="core-values-section py-5" style={{ background: "linear-gradient(to right, #eaf4ff, #f5faff)" }}>
       <div className="container">
         <h2 className="fw-bold text-center text-dark mb-4">Our Core Values</h2>
         <div className="row g-4">

@@ -51,7 +51,7 @@ const MissionVisionTeam = () => {
 
         {/* Our Team */}
         <div className="text-center mb-4">
-          <h2 className="fw-bold text-center mb-5 text-dark">Our Team</h2>
+          <h2 className="fw-bold text-center mb-3 text-dark">Our Team</h2>
           <p className="text-muted">
             Meet the people driving innovation at Bharat Digital Limited.
           </p>
