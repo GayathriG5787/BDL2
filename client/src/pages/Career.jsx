@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Tabs, Tab, Accordion } from 'react-bootstrap';
 import './Career.css';
+import careerVideo from '../assets/videos/career.mp4'
+import VideoBannerServices from '../components/VideoBannerServices';
 
 const Career = () => {
   const jobData = {
@@ -152,7 +154,12 @@ const Career = () => {
   return (
     <div className="career-page">
       {/* Hero Section */}
-      <div id="heroCarousel" className="carousel slide mb-5">
+      <VideoBannerServices
+        videoSrc={careerVideo}
+        title="Life At Bharat Digital"
+        subtitle="A culture of innovation, growth, and purpose." 
+      />
+      {/* <div id="heroCarousel" className="carousel slide mb-5">
         <div className="carousel-inner glassy-container rounded-4">
           <div className="carousel-item active">
             <img
@@ -175,11 +182,12 @@ const Career = () => {
         <button className="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
           <span className="carousel-control-next-icon" />
         </button>
-      </div>
+      </div> */}
 
       {/* Hiring Procedure Section */}
+      <div className='career-bottom-section'>
       <div className="container hiring-procedure-section">
-        <h2 className="text-center fw-bold mb-3">Our Hiring Procedure</h2>
+        <h2 className="text-center fw-bold mb-4">Our Hiring Procedure</h2>
         <p className="text-center text-muted mb-5">
           Here are the steps of the selection process for hiring employees. Tell us about your skills and aspirations.
         </p>
@@ -244,6 +252,7 @@ const Career = () => {
             </Tab>
           ))}
         </Tabs>
+        </div>
       </div>
     </div>
   );
