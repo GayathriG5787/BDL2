@@ -1,26 +1,48 @@
-import React from 'react';
-import Spline from '@splinetool/react-spline';
+import React, { Suspense } from 'react';
+import { useInView } from 'react-intersection-observer';
+
+const LazySpline = React.lazy(() =>
+  import('@splinetool/react-spline').then((module) => ({
+    default: module.default,
+  }))
+);
 
 const HeroSection = () => {
-  return (
-    <section style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
-      
-      {/* Fullscreen Interactive 3D Model using Spline */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          zIndex: 2,
-          pointerEvents: 'auto',
-        }}
-      >
-        <Spline scene="https://prod.spline.design/wWbD2Tg3U8XlRSPe/scene.splinecode" />
-      </div>
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
-      {/* Overlay Container */}
+  return (
+    <section
+      ref={ref}
+      style={{
+        position: 'relative',
+        width: '100%',
+        height: '100vh',
+        overflow: 'hidden',
+      }}
+    >
+      {/* Lazy-loaded Spline */}
+      {inView && (
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            zIndex: 2,
+            pointerEvents: 'auto',
+          }}
+        >
+          <Suspense fallback={<div>Loading 3D scene...</div>}>
+            <LazySpline scene="https://prod.spline.design/wWbD2Tg3U8XlRSPe/scene.splinecode" />
+          </Suspense>
+        </div>
+      )}
+
+      {/* Overlay Content */}
       <div
         style={{
           position: 'absolute',
