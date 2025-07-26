@@ -1,14 +1,6 @@
 .career-page {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #e0f2ff, #f8fbff);
   padding-top: 70px;
-}
-
-.glassy-container {
-  background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(10px);
-  border-radius: 1rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .roadmap {
@@ -21,7 +13,6 @@
 .roadmap-step {
   flex: 1 1 160px;
   min-width: 120px;
-  background: rgba(173, 216, 230, 0.4);
   padding: 1rem;
   margin: 0.5rem;
   backdrop-filter: blur(8px);
@@ -43,7 +34,6 @@
 
 .glassy-tabs .nav-link {
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   margin: 0 5px;
   font-weight: 600;
@@ -51,8 +41,7 @@
 }
 
 .glassy-tabs .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #007bff;
+  background-color: linear-gradient(to right, #e9f3ff, #f4faff);
   border: none;
 }
 
@@ -70,11 +59,6 @@
   backdrop-filter: blur(5px);
   border: none;
   color: #333;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #007bff;
 }
 
 .accordion-body {
@@ -204,7 +188,7 @@
 }
 
 .hiring-procedure-section {
-  background: #f3f7fd;
+
   border-radius: 1rem;
   padding: 3rem 2rem;
 }

@@ -178,7 +178,7 @@ const Career = () => {
       </div>
 
       {/* Hiring Procedure Section */}
-      <div className="container mb-5 hiring-procedure-section">
+      <div className="container hiring-procedure-section">
         <h2 className="text-center fw-bold mb-3">Our Hiring Procedure</h2>
         <p className="text-center text-muted mb-5">
           Here are the steps of the selection process for hiring employees. Tell us about your skills and aspirations.
@@ -211,7 +211,7 @@ const Career = () => {
 
       {/* Job Openings Section */}
       <div className="container mb-5">
-        <h2 className="mb-4 fw-bold">Current Openings</h2>
+        <h2 className="mb-4 pb-5 fw-bold text-center">Current Openings</h2>
         <Tabs
           activeKey={activeTab}
           onSelect={handleTabSelect}
