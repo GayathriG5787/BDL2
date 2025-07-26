@@ -1,9 +1,11 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './ServicesHome.css';
-import ribbon from '../assets/videos/ribbon.mp4'
+
+// Lazy load the Spline component
+const Spline = lazy(() => import('@splinetool/react-spline'));
 
 import webImg from '../assets/web.png';
 import socialImg from '../assets/social.png';
@@ -26,46 +28,47 @@ function ServicesHome() {
   };
 
   return (
-<div className="services-section">
+    <div className="services-section">
+      
+      {/* Suspense fallback shown while Spline is loading */}
+      <Suspense fallback={<div className="spline-loading"></div>}>
+        <Spline 
+          className="spline-background"
+          scene="https://prod.spline.design/dBxyhwjxOZcOqHwL/scene.splinecode" 
+        />
+      </Suspense>
 
-  {/* Video Background */}
-  <video autoPlay muted loop playsInline className="video-background">
-    <source src= {ribbon} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-
-  {/* Content */}
-  <div className="container mb-5 content-overlay">
-    <h1 className="fw-bold services-title">Services</h1>
-    <Slider {...settings}>
-      {data.map((d, index) => (
-        <div key={index} className="px-2 h-100">
-          <div className="card m-2 shadow-sm mx-auto custom-card h-100">
-            <img
-              src={d.img}
-              alt={d.name}
-              className="card-img-top"
-            />
-            <div className="card-body d-flex flex-column">
-              <div>
-                <h5 className="card-title text-primary fw-semibold mb-2">
-                  {d.name}
-                </h5>
-                <p className="card-text text-muted small pt-2">
-                  {d.review}
-                </p>
+      {/* Content */}
+      <div className="container mb-5 content-overlay">
+        <h1 className="fw-bold services-title">Services</h1>
+        <Slider {...settings}>
+          {data.map((d, index) => (
+            <div key={index} className="px-2 h-100">
+              <div className="card m-2 shadow-sm mx-auto custom-card h-100">
+                <img
+                  src={d.img}
+                  alt={d.name}
+                  className="card-img-top"
+                />
+                <div className="card-body d-flex flex-column">
+                  <div>
+                    <h5 className="card-title text-primary fw-semibold mb-2">
+                      {d.name}
+                    </h5>
+                    <p className="card-text text-muted small pt-2">
+                      {d.review}
+                    </p>
+                  </div>
+                  <button className="btn btn-primary mt-3 w-50 mx-auto p-2 rounded-pill">
+                    Read More
+                  </button>
+                </div>
               </div>
-              <button className="btn btn-primary mt-3 w-50 mx-auto p-2 rounded-pill">
-                Read More
-              </button>
             </div>
-          </div>
-        </div>
-      ))}
-    </Slider>
-  </div>
-</div>
-
+          ))}
+        </Slider>
+      </div>
+    </div>
   );
 }
 
@@ -78,5 +81,3 @@ const data = [
 ];
 
 export default ServicesHome;
-
-

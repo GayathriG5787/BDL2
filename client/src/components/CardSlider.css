@@ -66,3 +66,11 @@
 .custom-slider-container.custom-transition {
   transition: transform 0.4s ease-out;
 }
+
+#videoCarousel .carousel-control-prev {
+  left: -2rem; /* Move further left */
+}
+
+#videoCarousel .carousel-control-next {
+  right: -2rem; /* Move further right */
+}

@@ -36,7 +36,7 @@ const HeroSection = () => {
             pointerEvents: 'auto',
           }}
         >
-          <Suspense fallback={<div>Loading 3D scene...</div>}>
+          <Suspense fallback={<div></div>}>
             <LazySpline scene="https://prod.spline.design/wWbD2Tg3U8XlRSPe/scene.splinecode" />
           </Suspense>
         </div>
