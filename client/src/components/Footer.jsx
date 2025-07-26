@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="col-md-4 col-lg-3 mb-4">
             <div className="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
               <img src={logoF} alt="BDL Logo" height="35" className="me-2" />
-              <h6 className="fw-semibold mb-0">BHARAT DIGITAL LTD.</h6>
+              <h6 className="fw-semibold mb-0">BHARAT DIGITAL</h6>
             </div>
             <p className="small mb-0">
               Providing end-to-end digital solutions for modern businesses to grow and thrive.

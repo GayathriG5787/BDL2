@@ -60,7 +60,7 @@ const Testimonials = () => {
         >
           {testimonials.map((t, i) => (
             <SwiperSlide key={i}>
-              <div className="p-4 bg-white rounded-3 shadow h-100 d-flex flex-column justify-content-between">
+              <div className="p-4 bg-white rounded-3 h-100 d-flex flex-column justify-content-between" style={{border: "1px solid grey"}}>
                 <div>
                   <div className="d-flex justify-content-start mb-2">
                     {[...Array(t.stars)].map((_, idx) => (
