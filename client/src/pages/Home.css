@@ -1,0 +1,38 @@
+/* 🟦 Wrapper for the fixed spline so it doesn't push content */
+.spline-fixed-background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* 🟩 The Spline canvas itself */
+.spline-fixed-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🟨 Section that scrolls above the spline */
+.spline-section-wrapper {
+  position: relative;
+  min-height: 200vh; 
+  z-index: 1;
+}
+
+/* 🟧 Foreground content that scrolls normally */
+.spline-content-overlay {
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+}
+
+/* ⏳ Fallback while spline is loading */
+.spline-loading {
+  height: 100vh;
+  background: #f0f0f0;
+}

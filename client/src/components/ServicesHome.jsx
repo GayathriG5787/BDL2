@@ -31,12 +31,12 @@ function ServicesHome() {
     <div className="services-section">
       
       {/* Suspense fallback shown while Spline is loading */}
-      <Suspense fallback={<div className="spline-loading"></div>}>
+      {/* <Suspense fallback={<div className="spline-loading"></div>}>
         <Spline 
           className="spline-background"
           scene="https://prod.spline.design/dBxyhwjxOZcOqHwL/scene.splinecode" 
         />
-      </Suspense>
+      </Suspense> */}
 
       {/* Content */}
       <div className="container mb-5 content-overlay">
