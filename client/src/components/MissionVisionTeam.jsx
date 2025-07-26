@@ -1,5 +1,6 @@
 import React from "react";
-import { FaBullseye, FaEye, FaUsers } from "react-icons/fa";
+import { FaBullseye, FaEye } from "react-icons/fa";
+import "./MissionVisionTeam.css"; // Import the CSS file
 
 const teamMembers = [
   {
@@ -30,7 +31,7 @@ const MissionVisionTeam = () => {
         {/* Mission and Vision */}
         <div className="row g-4 mb-5">
           <div className="col-md-6">
-            <div className="p-4 shadow-sm bg-white rounded-4 h-100">
+            <div className="p-4 shadow-sm bg-white rounded-4 h-100 hover-effect">
               <div className="mb-3 text-primary fs-2"><FaBullseye /></div>
               <h4 className="fw-semibold mb-2">Our Mission</h4>
               <p className="text-muted mb-0">
@@ -39,7 +40,7 @@ const MissionVisionTeam = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="p-4 shadow-sm bg-white rounded-4 h-100">
+            <div className="p-4 shadow-sm bg-white rounded-4 h-100 hover-effect">
               <div className="mb-3 text-primary fs-2"><FaEye /></div>
               <h4 className="fw-semibold mb-2">Our Vision</h4>
               <p className="text-muted mb-0">
@@ -60,7 +61,7 @@ const MissionVisionTeam = () => {
         <div className="row g-4">
           {teamMembers.map((member, index) => (
             <div className="col-sm-6 col-md-4" key={index}>
-              <div className="bg-white rounded-4 shadow-sm text-center p-3 h-100">
+              <div className="bg-white rounded-4 shadow-sm text-center p-3 h-100 hover-effect">
                 <img
                   src={member.img}
                   alt={member.name}

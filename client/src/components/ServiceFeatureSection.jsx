@@ -1,5 +1,5 @@
-// ServiceFeatureSection.js
 import React from "react";
+import "./ServiceFeatureSection.css"; // Import the CSS file
 
 const ServiceFeatureSection = ({ sectionTitle, services }) => {
   return (
@@ -9,7 +9,7 @@ const ServiceFeatureSection = ({ sectionTitle, services }) => {
         <div className="row g-4">
           {services.map((service, index) => (
             <div className="col-md-4" key={index}>
-              <div className="card h-100 border-0 shadow-sm rounded-4 p-3" style={{ transition: "0.3s ease" }}>
+              <div className="card h-100 border-0 shadow-sm rounded-4 p-3 hover-effect">
                 <div className="card-body text-center">
                   <i className={`bi ${service.icon} text-primary fs-1 mb-3`}></i>
                   <h5 className="card-title fw-semibold">{service.title}</h5>

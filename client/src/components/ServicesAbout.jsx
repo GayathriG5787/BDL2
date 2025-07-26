@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaLaptopCode, FaNetworkWired, FaCogs, FaBullhorn, FaThumbsUp } from 'react-icons/fa';
+import './ServicesAbout.css'; // Import the CSS file
 
 const Services = () => {
   const services = [
@@ -38,7 +39,7 @@ const Services = () => {
         <Row className="g-4 justify-content-center">
           {services.map((service, index) => (
             <Col key={index} xs={12} sm={6} md={4}>
-              <Card className="h-100 text-center shadow-sm border-0 rounded-4 p-3 bg-white">
+              <Card className="h-100 text-center shadow-sm border-0 rounded-4 p-3 bg-white hover-effect">
                 <div className="mb-3">{service.icon}</div>
                 <Card.Title className="fw-semibold">{service.title}</Card.Title>
                 <Card.Text className="text-muted">{service.desc}</Card.Text>
