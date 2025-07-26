@@ -1,7 +1,11 @@
 .testimonial-card {
-  transition: all 0.3s ease;
-  background: white;
+  background: rgba(255, 255, 255, 0.15); /* translucent white */
   border: 1px solid #3b82f6;
+  border-radius: 1rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+  color: #fff; /* Ensures text visibility on glass */
 }
 
 .testimonial-card:hover {

@@ -50,7 +50,7 @@ const Testimonials = () => {
           //   delay: 3000, // ⏱ 3 seconds pause on each slide
           //   disableOnInteraction: false,
           // }}
-          speed={1000} // Smooth transition
+          speed={500} // Smooth transition
           grabCursor={true}
           allowTouchMove={true}
           breakpoints={{
@@ -62,7 +62,7 @@ const Testimonials = () => {
           {testimonials.map((t, i) => (
           <SwiperSlide key={i}>
             <div
-            className="testimonial-card m-2 p-4 bg-white rounded-3 h-100 d-flex flex-column justify-content-between text-start"
+            className="testimonial-card m-2 p-4 rounded-3 h-100 d-flex flex-column justify-content-between text-start"
             style={{
               minHeight: "300px",
               gap: "1.5rem",
@@ -85,7 +85,7 @@ const Testimonials = () => {
                     </svg>
                   ))}
                 </div>
-                <p className="text-muted small mb-0" style={{ lineHeight: "1.7", fontSize: "15px" }}>
+                <p className="text-muted small mb-0" style={{ lineHeight: "1.7", fontSize: "17px" }}>
                   “{t.quote}”
                 </p>
               </div>
