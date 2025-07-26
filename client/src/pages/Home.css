@@ -20,7 +20,6 @@
 /* 🟨 Section that scrolls above the spline */
 .spline-section-wrapper {
   position: relative;
-  min-height: 200vh; 
   z-index: 1;
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import './Testimonials.css'
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
@@ -36,19 +37,19 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-5">
+    <section className="" style={{paddingBottom: '5rem'}}>
       <div className="container text-center">
-        <h2 className="fw-bold mb-4">Our happy clients say about us</h2>
+        <h2 className="fw-bold mb-4 pb-5">Our happy clients say about us</h2>
 
         <Swiper
-          modules={[Autoplay]}
+          // modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={2}
           loop={true}
-          autoplay={{
-            delay: 3000, // ⏱ 3 seconds pause on each slide
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 3000, // ⏱ 3 seconds pause on each slide
+          //   disableOnInteraction: false,
+          // }}
           speed={1000} // Smooth transition
           grabCursor={true}
           allowTouchMove={true}
@@ -59,27 +60,52 @@ const Testimonials = () => {
           }}
         >
           {testimonials.map((t, i) => (
-            <SwiperSlide key={i}>
-              <div className="p-4 bg-white rounded-3 h-100 d-flex flex-column justify-content-between" style={{border: "1px solid grey"}}>
-                <div>
-                  <div className="d-flex justify-content-start mb-2">
-                    {[...Array(t.stars)].map((_, idx) => (
-                      <svg key={idx} xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FDB241" viewBox="0 0 24 24">
-                        <path d="M12 .587l3.668 7.568L24 9.75l-6 5.845 1.417 8.255L12 19.771 4.583 23.85 6 15.595 0 9.75l8.332-1.595z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <p className="text-muted">“{t.quote}”</p>
+          <SwiperSlide key={i}>
+            <div
+            className="testimonial-card m-2 p-4 bg-white rounded-3 h-100 d-flex flex-column justify-content-between text-start"
+            style={{
+              minHeight: "300px",
+              gap: "1.5rem",
+            }}
+          >
+
+              {/* Star Rating + Quote */}
+              <div>
+                <div className="d-flex mb-5">
+                  {[...Array(t.stars)].map((_, idx) => (
+                    <svg
+                      key={idx}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="#FDB241"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 .587l3.668 7.568L24 9.75l-6 5.845 1.417 8.255L12 19.771 4.583 23.85 6 15.595 0 9.75l8.332-1.595z" />
+                    </svg>
+                  ))}
                 </div>
-                <div className="d-flex align-items-center mt-3">
-                  <img src={t.img} className="rounded-circle" width="44" height="44" alt="avatar" />
-                  <div className="ms-2 text-start">
-                    <strong>{t.name}</strong>
-                    <div className="text-muted small">{t.role}</div>
-                  </div>
+                <p className="text-muted small mb-0" style={{ lineHeight: "1.7", fontSize: "15px" }}>
+                  “{t.quote}”
+                </p>
+              </div>
+
+              {/* Avatar + Info */}
+              <div className="d-flex align-items-center mt-3">
+                <img
+                  src={t.img}
+                  className="rounded-circle"
+                  width="44"
+                  height="44"
+                  alt={t.name}
+                />
+                <div className="ms-3 text-primary">
+                  <div className="fw-bold">{t.name}</div>
+                  <div className="text-muted small">{t.role}</div>
                 </div>
               </div>
-            </SwiperSlide>
+            </div>
+          </SwiperSlide>
           ))}
         </Swiper>
       </div>

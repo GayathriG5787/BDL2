@@ -4,7 +4,7 @@ import map from '../assets/map.png'
 
 const ContactUs = () => {
   return (
-    <section className="contact-section bg-light" id="contact">
+    <section className="my-2 contact-section bg-light" id="contact">
       <div className="container py-5">
         <div className="row g-5 align-items-center">
           
