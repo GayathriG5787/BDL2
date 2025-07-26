@@ -64,7 +64,7 @@ const Testimonials = () => {
             <div
               className="testimonial-card my-2 h-100 d-flex flex-column justify-content-between text-start"
               style={{
-                minHeight: "350px", // or any height you prefer
+                minHeight: "320px", // or any height you prefer
                 padding: "2rem",
                 gap: "1.5rem",
               }}

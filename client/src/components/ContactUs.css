@@ -1,37 +1,25 @@
-/* Section Styling */
-.contact-section {
-  border-radius: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-}
-
-/* Placeholder Styling */
-.contact-section input::placeholder,
-.contact-section textarea::placeholder {
-  color: #888;
-}
-
-/* Input Focus Styling */
-.contact-section .form-control:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
-}
-
-
-/* Responsive Map Styling */
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #3b82f6;
   border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+  color: #000;
 }
 
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+.glass-card:hover {
+  transform: translateY(-8px);
+  border: 2px solid #3b82f6;
+}
+
+.contact-section .form-control {
+  border: 1px solid #3b82f6;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  color: #000;
+}
+
+.contact-section .form-control:focus {
+  color: #000;
 }
